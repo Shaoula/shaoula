@@ -59,7 +59,7 @@ const contactForm = ref([
     label: 'Full name',
     placeholder: 'John Doe',
     required: true,
-    value: 'Demhat Sahin',
+    value: '',
   },
   {
     name: 'email',
@@ -67,21 +67,21 @@ const contactForm = ref([
     placeholder: 'you@company.com',
     type: 'email',
     required: true,
-    value: 'cdasahin@gmail.com',
+    value: '',
   },
   {
     name: 'phone',
     label: 'Phone number',
     placeholder: '123-456-7890',
     required: false,
-    value: '555-55-55',
+    value: '',
   },
   {
     name: 'message',
     label: 'Message',
     placeholder: 'How can we help you?',
     required: true,
-    value: 'This is my Message to you, my friend.',
+    value: '',
     el: textareaEl,
   },
 ])
