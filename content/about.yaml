@@ -1,0 +1,46 @@
+body:
+  - 
+    title: "Our Journey"
+    image:
+      url: "/images/our-journey.jpg"
+      alt: "Our Journey"
+    description: "Our story began with a spark of creativity and a commitment to excellence. We embarked on a mission to bridge the gap between imagination and technology, crafting digital dreams that resonate, inspire, and create lasting impressions."
+  -
+    title: "What Sets Us Apart"
+    image:
+      url: "/images/what-sets-us-apart.jpg"
+      alt: "What Sets Us Apart"
+    description: "Creativity and expertise are the pillars of our foundation. Beyond being a conventional web agency, we take pride in being digital architects. We weave strategies, designs, and development into seamless narratives that elevate brands."
+  -
+    title: "Our Approach"
+    image:
+      url: "/images/our-approach.jpg"
+      alt: "Our Approach"
+    description: "At Shaoula, we're invested in more than just projects; we're invested in relationships. With an empathetic approach, we immerse ourselves in your vision, working collaboratively to create digital solutions that exceed expectations."
+  -
+    title: "Our Team"
+    image:
+      url: "/images/our-team.jpg"
+      alt: "Our Team"
+    description: "Meet the minds behind Shaoula's digital wizardry. Our diverse team brings together talents from various disciplines, each contributing a unique perspective to every project we undertake."
+  -
+    title: "Our Promise"
+    image:
+      url: "/images/our-promise.jpg"
+      alt: "Our Promise"
+    description: "When you choose Shaoula, you're choosing dedication, creativity, and a commitment to your success. We're here to navigate the digital landscape with you, turning your aspirations into reality."
+  -
+    title: "Join Our Journey"
+    image:
+      url: "/images/join-our-journey.jpg"
+      alt: "Join Our Journey"
+    description: "From startups to established enterprises, we're here to transform your digital presence into a masterpiece. Join us in this journey of innovation, collaboration, and digital transformation."
+    cta:
+      label: "Explore Our Services"
+      href: "/services"
+  # -
+  #   title: "Let's Shape the Future Together"
+  #   image:
+  #     url: "/images/lets-shape-the-future-together.jpg"
+  #     alt: "Let's Shape the Future Together"
+  #   description: "Welcome to Shaoula, where dreams meet digital reality. Explore our portfolio, connect with our team, and let's embark on a path to redefine what's possible in the digital realm."

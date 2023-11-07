@@ -1,0 +1,9 @@
+title: Artistry Gallery Website
+description: A visually stunning website for Artistry Gallery, showcasing fine art collections with immersive galleries and artist profiles. Implemented an intuitive artwork catalog and online purchasing system.
+image:
+  url: "/images/portfolio/artistry.jpg"
+  alt: Artistry Gallery Website
+  width: 1200
+  height: 800
+slug: artistry
+order: 1
