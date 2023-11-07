@@ -106,8 +106,6 @@ async function submitForm() {
     return acc
   }, {})
 
-  console.log(formData)
-
   const res = await fetch('/api/contact', {
     method: 'POST',
     body: JSON.stringify(formData),
