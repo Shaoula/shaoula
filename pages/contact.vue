@@ -101,7 +101,7 @@ async function submitForm() {
   //   value: field.value,
   // }))
 
-  const formData = contactForm.value.reduce((acc, field) => {
+  const formData = contactForm.value.reduce((acc: any, field) => {
     acc[field.name] = field.value
     return acc
   }, {})
