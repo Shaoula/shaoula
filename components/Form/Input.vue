@@ -163,11 +163,11 @@ const label = computed(() => {
 
     dark:(bg-neutral-900 text-light-100);
 
-    &--error, &:has(:invalid) {
+    &--error:not(:focus-within), &:focus-within:has(:invalid) {
       @apply ring-2 ring-red-500 ring-opacity-25 border-red-500;
     }
 
-    &--success, &:has(:valid) {
+    &--success:not(:focus-within), &:focus-within:has(:valid) {
       @apply ring-2 ring-green-500 ring-opacity-25 border-green-500;
     }
 
