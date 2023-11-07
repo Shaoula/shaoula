@@ -88,7 +88,7 @@ const sections = data.value?.body
     md:(text-lg)
     lg:(text-xl)
 
-    dark:(text-neutral-500);
+    dark:(text-neutral-400);
   }
 
   &__title {
@@ -180,7 +180,7 @@ const sections = data.value?.body
 
     lg:(text-2xl)
 
-    dark:(text-neutral-500);
+    dark:(text-neutral-400);
   }
 
   &__content {

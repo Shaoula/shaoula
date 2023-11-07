@@ -107,7 +107,7 @@ const sections = data.value?.body
         md:(text-lg)
         lg:(text-xl)
 
-        dark:(text-neutral-500);
+        dark:(text-neutral-400);
     }
 
     &__title {
@@ -124,7 +124,7 @@ const sections = data.value?.body
         @apply text-lg font-medium text-neutral-600 text-center
 
         md:(text-xl)
-        lg:(text-2xl);
+        lg:(text-2xl)
 
         dark:(text-neutral-400);
         text-wrap: balance;
@@ -195,7 +195,7 @@ const sections = data.value?.body
 
     lg:(text-2xl)
 
-    dark:(text-neutral-500);
+    dark:(text-neutral-400);
   }
 
   &__content {

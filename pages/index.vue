@@ -492,7 +492,7 @@ const isMobile = computed(() => !breakpoints.lg.value)
 
     lg:(text-2xl)
 
-    dark:(text-neutral-500);
+    dark:(text-neutral-400);
   }
 
   &__content {
