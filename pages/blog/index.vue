@@ -82,7 +82,7 @@ async function onSubscribe(e: Event) {
   if (res.ok) {
     toggleIsLoading(false)
     email.value = ''
-    toast('Thank you for joining the waiting list!')
+    toast('Thank you for joining our newsletter!')
   }
   else {
     toggleIsLoading(false)
