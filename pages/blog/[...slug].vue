@@ -14,6 +14,10 @@ defineOgImage({
   subtitle: data.value?.description ?? 'Read the latest news and updates from Shaoula',
 })
 
+useSeoMeta({
+  titleTemplate: `%s | ${appName} Blog`,
+})
+
 const toc = data.value?.body?.toc?.links ?? []
 </script>
 

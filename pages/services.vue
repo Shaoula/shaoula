@@ -8,6 +8,11 @@ defineOgImage({
   subtitle: 'Welcome to Shaoula\'s comprehensive range of services. Explore the services we offer to see how we can help you succeed in the digital landscape.',
 })
 
+useSeoMeta({
+  title: 'Explore Our Offerings',
+  description: 'Explore our digital toolkit that includes web design, branding, marketing, and more. Let\'s shape your digital success story together.',
+})
+
 const services = await queryContent('services/')
   .only(['title', 'description'])
   .sort({ order: 1 })

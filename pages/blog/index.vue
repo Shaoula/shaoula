@@ -10,44 +10,9 @@ defineOgImage({
   subtitle: 'Dive into the world of digital innovation, design trends, and business strategies with our blog. Join us on a journey of discovery, learning, and inspiration.',
 })
 
-useHead({
-  meta: [
-    {
-      hid: 'description',
-      name: 'description',
-      content: `Read the latest news and updates from ${appName}`,
-    },
-    {
-      hid: 'og:title',
-      property: 'og:title',
-      content: `${appName} Blog`,
-    },
-    {
-      hid: 'og:description',
-      property: 'og:description',
-      content: `Read the latest news and updates from ${appName}`,
-    },
-    // {
-    //   hid: 'og:image',
-    //   property: 'og:image',
-    //   content: 'https://daxtil.com/images/og-image.png'
-    // },
-    {
-      hid: 'twitter:title',
-      name: 'twitter:title',
-      content: `${appName} Blog`,
-    },
-    {
-      hid: 'twitter:description',
-      name: 'twitter:description',
-      content: `Read the latest news and updates from ${appName}`,
-    },
-    // {
-    //   hid: 'twitter:image',
-    //   name: 'twitter:image',
-    //   content: 'https://daxtil.com/images/og-image.png'
-    // },
-  ],
+useSeoMeta({
+  title: 'Insights and Inspiration',
+  description: 'Our blog is a treasure trove of insights, tips, and inspiration. Join us on a journey through the ever-evolving digital landscape.',
 })
 
 const email = ref('')

@@ -12,6 +12,11 @@ defineOgImage({
   subtitle: 'At Shaoula, we\'re here to listen, collaborate, and turn your digital dreams into reality. Get in touch with us to start your next project or discuss how we can help you succeed in the digital realm.',
 })
 
+useSeoMeta({
+  title: 'Let\'s Connect',
+  description: 'Get in touch with us. Whether you have a question, a project idea, or just want to say hello, we\'re here to listen and engage.',
+})
+
 const randomTestimonial = await queryContent('testimonials').only(['name', 'title', 'text', 'image']).limit(1).find()
 const testimonial = randomTestimonial[0]
 

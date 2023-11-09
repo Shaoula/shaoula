@@ -5,6 +5,11 @@ defineOgImage({
   title: 'Where Creativity Meets Excellence.',
   subtitle: 'Explore our diverse range of design, development, and marketing endeavors, and discover how Shaoula transforms ideas into extraordinary digital experiences.',
 })
+
+useSeoMeta({
+  title: 'Our Creative Showcase',
+  description: 'Dive into our creative universe and witness the projects that define us. Each work is a testament to our commitment to excellence.',
+})
 </script>
 
 <template>

@@ -12,6 +12,11 @@ defineOgImage({
   subtitle: 'At Shaoula, we\'re more than just a web agency. We\'re the architects of digital dreams, dedicated to reshaping online experiences and empowering brands to reach new heights.',
 })
 
+useSeoMeta({
+  title: 'Discover Our Story',
+  description: 'Uncover the journey of Shaoula - a team of dreamers, designers, and strategists. Learn how we\'re reshaping digital experiences.',
+})
+
 // const copy = await queryContent('about').findOne()
 
 const breakpoints = useBreakpoints(breakpointsTailwind)

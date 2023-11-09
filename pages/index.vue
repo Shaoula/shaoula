@@ -12,7 +12,8 @@ defineOgImage({
 })
 
 useSeoMeta({
-  description: 'Welcome to Shaoula, where imagination meets expertise. We craft web solutions that make your brand shine online.',
+  title: 'Crafting Digital Excellence',
+  description: 'Step into our digital world, where creativity meets innovation. Discover how we bring brands to life with design, development, and a touch of magic.',
 })
 
 // const services = await queryContent('services'
