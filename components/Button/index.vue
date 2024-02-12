@@ -306,5 +306,9 @@ const linkProps = computed(() => (props.href ? { to: props.href, activeClass: 'a
     &:disabled {
       @apply opacity-40 cursor-not-allowed;
     }
+
+    &__placeholder {
+      @apply flex-shrink-0;
+    }
 }
 </style>
