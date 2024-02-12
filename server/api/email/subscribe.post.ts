@@ -10,7 +10,7 @@ export default defineEventHandler(async (event) => {
       'content-type': 'application/json',
       'api-key': apiKey,
     },
-    body: JSON.stringify(JSON.parse({ ...reqBody, listIds: [5]})),
+    body: JSON.stringify({...JSON.parse(reqBody), listIds: [5]}),
   }
 
   const { ok, body } = await fetch('https://api.brevo.com/v3/contacts', options)
