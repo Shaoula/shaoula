@@ -17,9 +17,9 @@ head:
         - name: "og:description"
           content: "Explore the importance of SEO and how Shaoula's strategies can help unlock your website's full potential."
         - name: "og:image"
-          content: "https://www.shaoula.com/images/blog/power-of-seo.jpg"
+          content: "/images/blog/power-of-seo.jpg"
         - name: "og:url"
-          content: "https://www.shaoula.com/blog/power-of-seo"
+          content: "/blog/power-of-seo"
         - name: "og:site_name"
           content: Shaoula
         - name: "og:type"
@@ -32,9 +32,9 @@ head:
         - name: "twitter:description"
           content: "Maximize your website's presence with the right SEO strategies. Discover more with Shaoula."
         - name: "twitter:image"
-          content: "https://www.shaoula.com/images/blog/power-of-seo.jpg"
+          content: "/images/blog/power-of-seo.jpg"
         - name: "twitter:url"
-          content: "https://www.shaoula.com/blog/power-of-seo"
+          content: "/blog/power-of-seo"
         - name: "twitter:site"
           content: "@shaoulagroup"
         - name: "twitter:creator"
@@ -56,9 +56,9 @@ head:
         - name: "description"
           content: "Discover the power of SEO and how you can unlock your website's full potential with Shaoula."
         - name: "image"
-          content: "https://www.shaoula.com/images/blog/power-of-seo.jpg"
+          content: "/images/blog/power-of-seo.jpg"
         - name: "url"
-          content: "https://www.shaoula.com/blog/power-of-seo"
+          content: "/blog/power-of-seo"
         - name: "keywords"
           content: ["SEO", "Search Engine Optimization", "Website Visibility", "User Experience", "Organic Traffic", "SERP", "Credibility", "Cost-Effective Marketing", "SEO Strategies", "Shaoula"]
         - name: "robots"
@@ -75,7 +75,7 @@ navigation:
 
 # The Power of SEO: Unlock Your Website's Full Potential
 
-In today's digital age, most businesses understand the importance of having a strong online presence. Still, many undervalue the power of Search Engine Optimization (SEO) in maximizing that presence. SEO is about more than just search engine rankings; it's a comprehensive approach to improving your website's overall visibility and user experience. At [Shaoula](https://www.shaoula.com/services/seo), we utilize effectual SEO strategies to unlock your website's full potential and drive business growth.
+In today's digital age, most businesses understand the importance of having a strong online presence. Still, many undervalue the power of Search Engine Optimization (SEO) in maximizing that presence. SEO is about more than just search engine rankings; it's a comprehensive approach to improving your website's overall visibility and user experience. At [Shaoula](/services), we utilize effectual SEO strategies to unlock your website's full potential and drive business growth.
 
 ## Understanding the Power of SEO
 
@@ -91,14 +91,14 @@ SEO is the process of enhancing your website's visibility on search engines like
 
 ## Tailored SEO Strategies at Shaoula
 
-At Shaoula, our SEO experts utilize advanced tools and methodologies to conduct comprehensive audits of your website and identify opportunities for improvement. We develop tailored SEO strategies that align with [our mission](https://www.shaoula.com/about-us) of simplifying our clients' digital journey, maximizing your return on investment in the process.
+At Shaoula, our SEO experts utilize advanced tools and methodologies to conduct comprehensive audits of your website and identify opportunities for improvement. We develop tailored SEO strategies that align with [our mission](/about) of simplifying our clients' digital journey, maximizing your return on investment in the process.
 
 ## Success Stories
 
-To provide you with a glimpse into how our SEO services have unlocked the potential of various businesses, read our [Success Stories](https://www.shaoula.com/success-stories). Witness how our approach can positively affect different scales and types of businesses.
+To provide you with a glimpse into how our SEO services have unlocked the potential of various businesses, read our [Success Stories](/projects). Witness how our approach can positively affect different scales and types of businesses.
 
 ## Start Your SEO Journey Today
 
 SEO isn't just about driving more traffic to your website; it's about attracting the right kind of traffic. Our SEO strategies are designed to attract users who are interested in what you have to offer, driving meaningful engagement and conversions.
 
-Are you ready to unlock your website's full potential with SEO? [Get in touch](https://www.shaoula.com/contact) with us and start your SEO journey today!
+Are you ready to unlock your website's full potential with SEO? [Get in touch](/contact) with us and start your SEO journey today!

@@ -17,9 +17,9 @@ head:
         - name: "og:description"
           content: "Uncover the power of simplicity in design and how you can implement it in your projects with these expert tips."
         - name: "og:image"
-          content: "https://www.shaoula.com/images/blog/simplicity-in-design.jpg"
+          content: "/images/blog/simplicity-in-design.jpg"
         - name: "og:url"
-          content: "https://www.shaoula.com/blog/why-simplicity-is-important-in-design"
+          content: "/blog/why-simplicity-is-important-in-design"
         - name: "og:site_name"
           content: Shaoula
         - name: "og:type"
@@ -32,9 +32,9 @@ head:
         - name: "twitter:description"
           content: "Master the art of simplicity in design with these expert tips from Shaoula's design team. Discover the balance between aesthetics and functionality."
         - name: "twitter:image"
-          content: "https://www.shaoula.com/images/blog/simplicity-in-design.jpg"
+          content: "/images/blog/simplicity-in-design.jpg"
         - name: "twitter:url"
-          content: "https://www.shaoula.com/blog/why-simplicity-is-important-in-design"
+          content: "/blog/why-simplicity-is-important-in-design"
         - name: "twitter:site"
           content: "@shaoulagroup"
         - name: "twitter:creator"
@@ -56,9 +56,9 @@ head:
         - name: "description"
           content: "Dive deep into the importance of simplicity in design and how you can apply it to your projects with Shaoula's expert insights."
         - name: "image"
-          content: "https://www.shaoula.com/images/blog/simplicity-in-design.jpg"
+          content: "/images/blog/simplicity-in-design.jpg"
         - name: "url"
-          content: "https://www.shaoula.com/blog/why-simplicity-is-important-in-design"
+          content: "/blog/why-simplicity-is-important-in-design"
         - name: "keywords"
           content: ["Simplicity in Design", "Design Tips", "User Experience", "Shaoula", "Minimalistic Design", "Conversion Rate", "Effective Communication", "Navigation Design", "Call to Action", "Google, Apple, Airbnb Designs", "Usability", "Functional Design", "Simplicity in Web Design", "Design Tips", "Typeface Selection", "Color Scheme", "Clutter-Free Design", "Vision of Shaoula"]
         - name: "robots"
@@ -75,7 +75,7 @@ navigation:
 
 # Why Simplicity is Important in Design: Tips for Striking the Right Balance 
 
-In the world of design, less truly can be more. The trend toward minimalistic, user-centered design continues to grow, proving the old adage 'simplicity is the ultimate sophistication.' A concept embraced and executed by renowned companies like Apple and Google, simplicity in design can improve usability, enhance user experience, and ultimately boost your bottom line. At [Shaoula](https://www.shaoula.com/services), we simplify the intricate, curate the essential, and strike a harmonious balance between aesthetics and functionality.
+In the world of design, less truly can be more. The trend toward minimalistic, user-centered design continues to grow, proving the old adage 'simplicity is the ultimate sophistication.' A concept embraced and executed by renowned companies like Apple and Google, simplicity in design can improve usability, enhance user experience, and ultimately boost your bottom line. At [Shaoula](/services), we simplify the intricate, curate the essential, and strike a harmonious balance between aesthetics and functionality.
 
 ## The Importance of Simplicity in Design
 
@@ -111,14 +111,14 @@ A simplistic design approach doesn't entail stripping away creativity. Instead, 
 
 6. **Use Colors Wisely**: Effective use of a simple color scheme can enhance your design and guide users' eyes to the important components.
 
-At [Shaoula](https://www.shaoula.com/), our design philosophy aligns with simplicity, where we believe distortion often leads to distraction. We strive for simplicity and precision, ensuring our designs aren't just visually appealing but functionally superior as well. 
+At [Shaoula](/), our design philosophy aligns with simplicity, where we believe distortion often leads to distraction. We strive for simplicity and precision, ensuring our designs aren't just visually appealing but functionally superior as well. 
 
-Are you looking to apply the power of simplicity to your design needs? [Connect with us](https://www.shaoula.com/contact) today. Let’s craft a design that resonates with your brand and your audience.
+Are you looking to apply the power of simplicity to your design needs? [Connect with us](/contact) today. Let’s craft a design that resonates with your brand and your audience.
 
 
 <!-- # Why Simplicity is Important in Design: Tips for Striking the Right Balance 
 
-In design, there's a well-known principle that 'less is more.' As technology evolves and becomes more complex, the importance of having a simple yet effective design effortlessly stands out. Here at [Shaoula](https://www.shaoula.com/services/design), we realize the power of simplicity in design, and guide you towards striking the right balance.
+In design, there's a well-known principle that 'less is more.' As technology evolves and becomes more complex, the importance of having a simple yet effective design effortlessly stands out. Here at [Shaoula](/services/design), we realize the power of simplicity in design, and guide you towards striking the right balance.
 
 ## Unraveling the Importance of Simplicity in Design
 
@@ -144,4 +144,4 @@ Designing simply doesn't mean you have to strip away creativity. It's about maki
 
 4. **Clear CTA’s**: Use concise, straightforward language for your calls to action. Readers should instantly understand what action they should take.
 
-At [Shaoula](https://www.shaoula.com/), our design philosophy revolves around crafting simple, efficient, and captivating designs tailored to meet your business objectives. Interested in exploring how we can bring your vision to life? [Get in touch](https://www.shaoula.com/contact) with us today. -->
+At [Shaoula](/), our design philosophy revolves around crafting simple, efficient, and captivating designs tailored to meet your business objectives. Interested in exploring how we can bring your vision to life? [Get in touch](/contact) with us today. -->

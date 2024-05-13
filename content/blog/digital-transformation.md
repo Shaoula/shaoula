@@ -72,7 +72,7 @@ navigation:
 
 # Transforming Your Business with Effective Digital Solutions
 
-In the 21st century, very few phrases hold power as 'Digital Transformation.' Revolutionary as it is, the hard-hitting impact of digital transformation isn't easy to comprehend and implement. With that in mind, let's demystify the leviathan called digital transformation and showcase how our solutions at [Shaoula](https://www.shaoula.com/services) can be the cornerstone of your business evolution. 
+In the 21st century, very few phrases hold power as 'Digital Transformation.' Revolutionary as it is, the hard-hitting impact of digital transformation isn't easy to comprehend and implement. With that in mind, let's demystify the leviathan called digital transformation and showcase how our solutions at [Shaoula](/services) can be the cornerstone of your business evolution. 
 
 ## The Gist of Digital Transformation
 
@@ -86,7 +86,7 @@ Broadly speaking, Digital Transformation refers to leveraging digital technologi
 
 - **Operational Agility**: Removing redundant tasks and automating workflows make your business more flexible and responsive.
 
-At [Shaoula](https://www.shaoula.com/), we understand these nuances and offer [Digital Solutions](https://www.shaoula.com/services) that simplify your transition to the digital world, placing you at the forefront of innovation and customer satisfaction.
+At [Shaoula](/), we understand these nuances and offer [Digital Solutions](/services) that simplify your transition to the digital world, placing you at the forefront of innovation and customer satisfaction.
 
 ## Shaoula's Role in Your Digital Transformation
 
@@ -94,4 +94,4 @@ Embarking on your digital transformation journey with Shaoula means aligning you
 
 Our services include a diverse array of digital transformation elements, including web development, digital marketing, branding, and more. With our solutions, your business transformation journey becomes a strategic and well-planned process rather than a scramble to adopt technology.
 
-Ready to leap into the future with digital transformation? [Contact us](https://www.shaoula.com/contact) today and let us guide you on your digital journey.
+Ready to leap into the future with digital transformation? [Contact us](/contact) today and let us guide you on your digital journey.
