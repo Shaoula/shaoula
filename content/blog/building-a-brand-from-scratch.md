@@ -1,70 +1,58 @@
 ---
+path: "/blog/building-a-brand-from-scratch"
 title: Building a Brand from Scratch
 slug: building-a-brand-from-scratch
 readingTime: 3 Minutes
-description: Discover the power of Digital Transformation and how you can put it into action with Shaoula's all-inclusive digital solutions.
-category: Digital Transformation
-date: 2023-10-08T00:00:00.000Z
+description: Learn how to build a strong, memorable brand from scratch with our comprehensive guide. Discover tips on market research, brand identity, logo design, and more.
+category: Branding
+date: 2024-05-15T00:00:00.000Z
 author: Shaoula
 image:
   url: /images/blog/building-a-brand-from-scratch.jpeg
-  alt: Transforming Your Business with Effective Digital Solutions
+  alt: Building a Brand from Scratch
+
 head:
   meta:
-    - name: og:title
-      content: Transforming Your Business with Effective Digital Solutions
-    - name: og:description
-      content: Learn the importance of Digital Transformation and how Shaoula's solutions can enable your business growth.
+  # Facebook & LinkedIn
+  #   - name: og:title
+  #     content: Transforming Your Business with Effective Digital Solutions
+  #   - name: og:description
+  #     content: Learn the importance of Digital Transformation and how Shaoula's solutions can enable your business growth.
     - name: og:image
       content: https://www.shaoula.com/images/blog/building-a-brand-from-scratch.jpeg
-    - name: og:url
-      content: https://www.shaoula.com/blog/building-a-brand-from-scratch
-    - name: og:site_name
-      content: Shaoula
-    - name: og:type
-      content: article
+  #   - name: og:url
+  #     content: https://www.shaoula.com/blog/building-a-brand-from-scratch
+  #   - name: og:site_name
+  #     content: Shaoula
+  #   - name: og:type
+  #     content: article
+
+  # # Twitter
     - name: twitter:card
       content: summary_large_image
-    - name: twitter:title
-      content: Transforming Your Business with Effective Digital Solutions
-    - name: twitter:description
-      content: Unleash the power of Digital Transformation with Shaoula's innovative solutions.
-    - name: twitter:image
-      content: https://www.shaoula.com/images/blog/building-a-brand-from-scratch.jpeg
-    - name: twitter:url
-      content: https://www.shaoula.com/blog/building-a-brand-from-scratch
-    - name: twitter:site
-      content: '@shaoulagroup'
-    - name: twitter:creator
-      content: '@shaoulagroup'
+
+  # SEO
     - name: article:published_time
-      content: 2022-05-17T00:00:00.000Z
+      content: 2024-05-15T00:00:00.000Z
     - name: article:modified_time
-      content: 2022-05-17T00:00:00.000Z
+      content: 2024-05-15T00:00:00.000Z
     - name: article:author
       content: https://www.facebook.com/profile.php?id=100065281140375&mibextid=LQQJ4d
     - name: article:section
-      content: Digital Transformation, Shaoula, Business Growth
+      content: Digital Transformation, Shaoula, Business Growth, Branding, Brand Identity
     - name: article:tag
-      content: Digital Transformation, Shaoula, Business Growth
-    - name: title
-      content: Transforming Your Business with Effective Digital Solutions
-    - name: description
-      content: Discover the power of Digital Transformation and how you can put it into action with Shaoula's all-inclusive digital solutions.
-    - name: image
-      content: https://www.shaoula.com/images/blog/building-a-brand-from-scratch.jpeg
-    - name: url
-      content: https://www.shaoula.com/blog/building-a-brand-from-scratch
+      content: Digital Transformation, Shaoula, Business Growth, Branding, Brand Identity
+      
     - name: keywords
-      content: Digital Transformation, Shaoula, Business Transformation, Digital Solutions, Business Growth, Digital Technologies, Effective Solutions, Customer Experiences, Competitive Advantage, Operational Agility
+      content: Digital Transformation, Shaoula, Business Transformation, Digital Solutions, Business Growth, Digital Technologies, Effective Solutions, Customer Experiences, Competitive Advantage, Operational Agility, Building a brand, Brand creation, Brand identity, Branding strategy, Brand development, Logo design, Market research, Target audience, Brand voice, Visual identity, Brand values, Mission statement, Brand messaging, User experience design, Website design, Brand storytelling, Digital branding, Branding guide, Comprehensive branding, Brand consistency
     - name: robots
       content: index, follow
     - name: author
       content: Shaoula
     - name: copyright
-      content: © 2023 Shaoula
-navigation:
-  title: Transforming Your Business with Effective Digital Solutions
+      content: © 2024 Shaoula
+
+navigation: true
 ---
 
 # Building a Brand from Scratch: A Comprehensive Guide
