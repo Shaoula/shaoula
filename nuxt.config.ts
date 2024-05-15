@@ -18,7 +18,6 @@ export default defineNuxtConfig({
     'nuxt-vercel-analytics',
     '@nuxtjs/i18n',
     'nuxt-icon',
-    '@nuxthq/studio',
     '@nuxt/eslint',
   ],
 
