@@ -1,0 +1,54 @@
+# Language: French
+body:
+  - title: Notre parcours
+    image:
+      url: /images/our-journey.jpg
+      # alt: "Our Journey"
+      alt: Notre parcours
+    # description: "Our story began with a spark of creativity and a commitment to excellence. We embarked on a mission to bridge the gap between imagination and technology, crafting digital dreams that resonate, inspire, and create lasting impressions."
+    description: 'Notre histoire a commencé avec une étincelle de créativité et un engagement envers l''excellence. Nous nous sommes lancés dans une mission pour combler le fossé entre l''imagination et la technologie, en créant des rêves numériques qui résonnent, inspirent et créent des impressions durables.'
+  - title: Ce qui nous distingue
+    image:
+      url: /images/what-sets-us-apart.jpg
+      # alt: "What Sets Us Apart"
+      alt: Ce qui nous distingue
+    # description: "Creativity and expertise are the pillars of our foundation. Beyond being a conventional web agency, we take pride in being digital architects. We weave strategies, designs, and development into seamless narratives that elevate brands."
+    description: 'La créativité et l''expertise sont les piliers de notre fondation. Au-delà d''être une agence web conventionnelle, nous sommes fiers d''être des architectes numériques. Nous tissons des stratégies, des designs et des développements en récits sans faille qui élèvent les marques.'
+  - title: Notre approche
+    image:
+      url: /images/our-approach.jpg
+      # alt: "Our Approach"
+      alt: Notre approche
+    # description: "At Shaoula, we're invested in more than just projects; we're invested in relationships. With an empathetic approach, we immerse ourselves in your vision, working collaboratively to create digital solutions that exceed expectations."
+    description: 'Chez Shaoula, nous investissons dans plus que des projets; nous investissons dans des relations. Avec une approche empathique, nous nous immergeons dans votre vision, travaillant en collaboration pour créer des solutions numériques qui dépassent les attentes.'
+  - title: Notre équipe
+    image:
+      url: /images/our-team.jpg
+      # alt: "Our Team"
+      alt: Notre équipe
+    # description: "Meet the minds behind Shaoula's digital wizardry. Our diverse team brings together talents from various disciplines, each contributing a unique perspective to every project we undertake."
+    description: 'Rencontrez les esprits derrière la magie numérique de Shaoula. Notre équipe diversifiée rassemble des talents de diverses disciplines, chacun apportant une perspective unique à chaque projet que nous entreprenons.'
+  - title: Notre promesse
+    image:
+      url: /images/our-promise.jpg
+      # alt: "Our Promise"
+      alt: Notre promesse
+    # description: "When you choose Shaoula, you're choosing dedication, creativity, and a commitment to your success. We're here to navigate the digital landscape with you, turning your aspirations into reality."
+    description: 'Lorsque vous choisissez Shaoula, vous choisissez le dévouement, la créativité et l''engagement envers votre succès. Nous sommes là pour naviguer dans le paysage numérique avec vous, transformant vos aspirations en réalité.'
+  - title: Rejoignez notre parcours
+    image:
+      url: /images/join-our-journey.jpg
+      # alt: "Join Our Journey"
+      alt: Rejoignez notre parcours
+    # description: "From startups to established enterprises, we're here to transform your digital presence into a masterpiece. Join us in this journey of innovation, collaboration, and digital transformation."
+    description: 'Des startups aux entreprises établies, nous sommes là pour transformer votre présence numérique en un chef-d''œuvre. Rejoignez-nous dans ce voyage d''innovation, de collaboration et de transformation numérique.'
+    cta:
+      # label: "Explore Our Services"
+      label: Explorez nos services
+      href: /services
+  # -
+  #   title: "Let's Shape the Future Together"
+  #   image:
+  #     url: "/images/lets-shape-the-future-together.jpg"
+  #     alt: "Let's Shape the Future Together"
+  #   description: "Welcome to Shaoula, where dreams meet digital reality. Explore our portfolio, connect with our team, and let's embark on a path to redefine what's possible in the digital realm."

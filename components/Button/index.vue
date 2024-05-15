@@ -86,8 +86,11 @@ const linkProps = computed(() => (props.href ? { to: props.href, activeClass: 'a
         </slot>
       </slot>
       <slot>
-        <span v-if="placeholder || label" :class="$style.Button__placeholder">
-          {{ placeholder || label }}
+        <span v-if="placeholder" :class="$style.Button__placeholder" class="inline-block">
+          {{ placeholder }}
+        </span>
+        <span v-else-if="label" :class="$style.Button__placeholder" class="inline-block">
+          {{ label }}
         </span>
       </slot>
       <slot name="trailing">
@@ -114,201 +117,201 @@ const linkProps = computed(() => (props.href ? { to: props.href, activeClass: 'a
 
 <style module lang="scss">
 .Button {
-    @apply flex items-center gap-2 px-3 cursor-pointer rounded-sm transition-all duration-200;
+  @apply flex items-center gap-2 px-3 cursor-pointer rounded-sm transition-all duration-200;
 
-    &:focus {
-        @apply ring-2 ring-blue outline-none ring-offset;
+  &:focus {
+    @apply ring-2 ring-blue outline-none ring-offset;
+  }
+
+  /* Hovering while focused */
+  &:focus:hover {
+    @apply ring-offset ring-offset-[var(--border-color)];
+  }
+
+  &--size {
+    &-tiny {
+      @apply h-6 text-xs;
+
+      &.Button--icon-only {
+        @apply w-6;
+
+        & > * {
+          @apply text-xs;
+        }
+      }
     }
 
-    /* Hovering while focused */
-    &:focus:hover {
-        @apply ring-offset ring-offset-[var(--border-color)];
+    &-sm {
+      @apply h-8 text-sm;
+
+      &.Button--icon-only {
+        @apply w-8;
+
+        & > * {
+          @apply text-sm;
+        }
+      }
     }
 
-    &--size {
-        &-tiny {
-            @apply h-6 text-xs;
+    &-md {
+      @apply h-10;
 
-            &.Button--icon-only {
-                @apply w-6;
-
-                &>* {
-                    @apply text-xs;
-                }
-            }
-        }
-
-        &-sm {
-            @apply h-8 text-sm;
-
-            &.Button--icon-only {
-                @apply w-8;
-
-                &>* {
-                    @apply text-sm;
-                }
-            }
-        }
-
-        &-md {
-            @apply h-10;
-
-            &.Button--icon-only {
-                @apply w-10;
-            }
-        }
-
-        &-lg {
-            @apply h-12 text-lg;
-
-            &.Button--icon-only {
-                @apply w-12;
-
-                &>* {
-                    @apply text-lg;
-                }
-            }
-        }
+      &.Button--icon-only {
+        @apply w-10;
+      }
     }
 
-    &--shape {
-        &-rounded {
-            @apply rounded;
-        }
+    &-lg {
+      @apply h-12 text-lg;
 
-        &-pill {
-            @apply rounded-lg;
-        }
+      &.Button--icon-only {
+        @apply w-12;
 
-        &-circle {
-            @apply rounded-full;
+        & > * {
+          @apply text-lg;
         }
+      }
+    }
+  }
 
-        &-none {
-            @apply rounded-none;
-        }
+  &--shape {
+    &-rounded {
+      @apply rounded;
     }
 
-    &--v {
-        &-contained {
-            @apply bg-[var(--bg-color)] text-[var(--text-color)];
-
-            &:hover {
-                @apply bg-[var(--bg-color-hover)] ring ring-[var(--border-color)];
-            }
-
-            &[aria-current="page"] {
-                @apply bg-[var(--bg-color-active)];
-            }
-        }
-
-        &-outlined {
-            @apply bg-transparent text-[var(--bg-color)] border border-[var(--border-color)];
-
-            /* hover:(bg-[var(--bg-color-hover)] text-[var(--text-color-hover)]); */
-            &:hover {
-                @apply text-[var(--bg-color-hover)] border-[var(--bg-color)];
-            }
-
-            &[aria-current="page"] {
-                @apply text-[var(--bg-color-active)] border-[var(--bg-color-active)];
-            }
-        }
-
-        &-soft {
-            @apply bg-transparent text-[var(--bg-color)] hover: (bg-[var(--border-color)]);
-
-            &[aria-current="page"] {
-                @apply bg-[var(--border-color)];
-            }
-        }
-
-        &-text {
-            @apply bg-transparent text-[var(--bg-color)];
-
-            &:hover {
-                @apply text-[var(--bg-color-hover)];
-            }
-
-            &:active {
-                @apply text-[var(--bg-color-active)];
-            }
-        }
+    &-pill {
+      @apply rounded-lg;
     }
 
-    &--color {
-        &-default {
-            /* Default */
-            --bg-color: theme('colors.neutral.900');
-            --text-color: theme('colors.light.100');
-            --border-color: theme('colors.neutral.200');
-            /* Hover */
-            --bg-color-hover: theme('colors.neutral.800');
-            --text-color-hover: theme('colors.blue.500');
-            /* Active */
-            --bg-color-active: theme('colors.neutral.700');
-
-            /* Dark */
-            @media (prefers-color-scheme: dark) {
-                /* Defaukt */
-                --bg-color: theme('colors.neutral.100');
-                --text-color: theme('colors.dark.800');
-                --border-color: theme('colors.neutral.200');
-                /* Hover */
-                --bg-color-hover: theme('colors.neutral.200');
-                --text-color-hover: theme('colors.blue.500');
-                /* Active */
-                --bg-color-active: theme('colors.neutral.300');
-            }
-        }
-
-        // &-primary {
-        //     /* Default */
-        //     --bg-color: theme('colors.primary.500');
-        //     --text-color: theme('colors.white');
-        //     --border-color: theme('colors.primary.200');
-        //     /* Hover */
-        //     --bg-color-hover: theme('colors.primary.600');
-        //     --text-color-hover: theme('colors.white');
-        //     /* Active */
-        //     --bg-color-active: theme('colors.primary.700');
-        // }
-
-        &-accent {
-            /* Default */
-            --bg-color: theme('colors.teal.500');
-            --text-color: theme('colors.white');
-            --border-color: theme('colors.teal.200');
-            /* Hover */
-            --bg-color-hover: theme('colors.teal.600');
-            --text-color-hover: theme('colors.white');
-            /* Active */
-            --bg-color-active: theme('colors.teal.700');
-        }
-
-        &-danger {
-            /* Default */
-            --bg-color: theme('colors.red.500');
-            --text-color: theme('colors.white');
-            --border-color: theme('colors.red.200');
-            /* Hover */
-            --bg-color-hover: theme('colors.red.600');
-            --text-color-hover: theme('colors.white');
-            /* Active */
-            --bg-color-active: theme('colors.red.700');
-        }
+    &-circle {
+      @apply rounded-full;
     }
 
-    &--icon-only {
-        @apply aspect-square p-0 items-center justify-center;
+    &-none {
+      @apply rounded-none;
+    }
+  }
+
+  &--v {
+    &-contained {
+      @apply bg-[var(--bg-color)] text-[var(--text-color)];
+
+      &:hover {
+        @apply bg-[var(--bg-color-hover)] ring ring-[var(--border-color)];
+      }
+
+      &[aria-current='page'] {
+        @apply bg-[var(--bg-color-active)];
+      }
     }
 
-    &:disabled {
-      @apply opacity-40 cursor-not-allowed;
+    &-outlined {
+      @apply bg-transparent text-[var(--bg-color)] border border-[var(--border-color)];
+
+      /* hover:(bg-[var(--bg-color-hover)] text-[var(--text-color-hover)]); */
+      &:hover {
+        @apply text-[var(--bg-color-hover)] border-[var(--bg-color)];
+      }
+
+      &[aria-current='page'] {
+        @apply text-[var(--bg-color-active)] border-[var(--bg-color-active)];
+      }
     }
 
-    &__placeholder {
-      @apply flex-shrink-0;
+    &-soft {
+      @apply bg-transparent text-[var(--bg-color)] hover: (bg-[var(--border-color)]);
+
+      &[aria-current='page'] {
+        @apply bg-[var(--border-color)];
+      }
     }
+
+    &-text {
+      @apply bg-transparent text-[var(--bg-color)];
+
+      &:hover {
+        @apply text-[var(--bg-color-hover)];
+      }
+
+      &:active {
+        @apply text-[var(--bg-color-active)];
+      }
+    }
+  }
+
+  &--color {
+    &-default {
+      /* Default */
+      --bg-color: theme('colors.neutral.900');
+      --text-color: theme('colors.light.100');
+      --border-color: theme('colors.neutral.200');
+      /* Hover */
+      --bg-color-hover: theme('colors.neutral.800');
+      --text-color-hover: theme('colors.blue.500');
+      /* Active */
+      --bg-color-active: theme('colors.neutral.700');
+
+      /* Dark */
+      @media (prefers-color-scheme: dark) {
+        /* Defaukt */
+        --bg-color: theme('colors.neutral.100');
+        --text-color: theme('colors.dark.800');
+        --border-color: theme('colors.neutral.200');
+        /* Hover */
+        --bg-color-hover: theme('colors.neutral.200');
+        --text-color-hover: theme('colors.blue.500');
+        /* Active */
+        --bg-color-active: theme('colors.neutral.300');
+      }
+    }
+
+    // &-primary {
+    //     /* Default */
+    //     --bg-color: theme('colors.primary.500');
+    //     --text-color: theme('colors.white');
+    //     --border-color: theme('colors.primary.200');
+    //     /* Hover */
+    //     --bg-color-hover: theme('colors.primary.600');
+    //     --text-color-hover: theme('colors.white');
+    //     /* Active */
+    //     --bg-color-active: theme('colors.primary.700');
+    // }
+
+    &-accent {
+      /* Default */
+      --bg-color: theme('colors.teal.500');
+      --text-color: theme('colors.white');
+      --border-color: theme('colors.teal.200');
+      /* Hover */
+      --bg-color-hover: theme('colors.teal.600');
+      --text-color-hover: theme('colors.white');
+      /* Active */
+      --bg-color-active: theme('colors.teal.700');
+    }
+
+    &-danger {
+      /* Default */
+      --bg-color: theme('colors.red.500');
+      --text-color: theme('colors.white');
+      --border-color: theme('colors.red.200');
+      /* Hover */
+      --bg-color-hover: theme('colors.red.600');
+      --text-color-hover: theme('colors.white');
+      /* Active */
+      --bg-color-active: theme('colors.red.700');
+    }
+  }
+
+  &--icon-only {
+    @apply aspect-square p-0 items-center justify-center;
+  }
+
+  &:disabled {
+    @apply opacity-40 cursor-not-allowed;
+  }
+
+  &__placeholder {
+    @apply flex-shrink-0;
+  }
 }
 </style>

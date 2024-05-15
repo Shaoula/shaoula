@@ -4,12 +4,15 @@ export default defineEventHandler(async (event) => {
   const reqBody = await readBody(event)
   const { name, email, message } = JSON.parse(reqBody)
 
+  const runtimeConfig = useRuntimeConfig()
+
   const transporter = nodemailer.createTransport({
-    host: useRuntimeConfig().smtpHost,
-    port: useRuntimeConfig().smtpPort,
+    // @ts-expect-error - TS doesn't know about Cloudflare Workers runtime config
+    host: runtimeConfig.smtp.host,
+    port: runtimeConfig.smtp.port,
     auth: {
-      user: useRuntimeConfig().smtpUser,
-      pass: useRuntimeConfig().smtpPass,
+      user: runtimeConfig.smtp.user,
+      pass: runtimeConfig.smtp.pass,
     },
   })
 

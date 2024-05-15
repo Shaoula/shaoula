@@ -18,17 +18,18 @@ defineProps<{
 </script>
 
 <template>
-  <div class="h-full w-full flex flex-col bg-gray-100">
-    <div class="flex flex-grow flex-col items-center justify-center gap-8">
-      <p v-if="eyebrow" class="max-w-xl text-center text-xl font-semibold tracking-wider uppercase text-neutral-500">
+  <div class="h-full w-full flex flex-col bg-gray-100 pt-20">
+    <div class="mxa max-w-2xl flex flex-grow flex-col items-center justify-center gap-8 container">
+      <p v-if="eyebrow" class="max-w-xl text-center text-xl text-neutral-500 font-semibold tracking-wider uppercase">
         {{ eyebrow }}
       </p>
-      <h2 class="max-w-4xl text-center text-4xl font-bold leading-normal text-neutral-900 -text-6xl">
+      <h2 class="text-center text-balance text-5xl text-neutral-900 font-bold leading-normal">
         {{ title }}
       </h2>
-      <h5 class="max-w-4xl text-center text-2xl font-medium text-neutral-600">
+      <h5 class="text-center text-2xl font-medium">
         {{ subtitle }}
       </h5>
+      <Logo height="100" class="mta" />
     </div>
 
     <!-- <div class="flex items-center justify-center">

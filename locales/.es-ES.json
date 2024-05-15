@@ -1,0 +1,115 @@
+{
+  "menu": "Menú",
+  "skipToMain": "Saltar al contenido principal",
+  "mainNavigation": "Navegación principal",
+  "getQuote": "Obtener una cotización",
+  "goToHomepage": "Ir a la página de inicio",
+  "quickLinks": "Enlaces rápidos",
+  "followUs": "Síguenos",
+  "newsletter": {
+    "title": "Boletín",
+    "email": "Dirección de correo electrónico",
+    "placeholder": "Ingrese su dirección de correo electrónico",
+    "submit": "Suscribirse",
+    "description": "Manténgase al día con las últimas noticias y actualizaciones de Shaoula.",
+    "consent": "Al suscribirte, aceptas nuestro {0} y das tu consentimiento para recibir actualizaciones de nuestra empresa.",
+    "invalidEmail": "Por favor, introduce una dirección de correo electrónico válida.",
+    "success": "¡Gracias por unirte a nuestro boletín!",
+    "error": "Ocurrió un error. Por favor, inténtalo de nuevo más tarde."
+  },
+  "privacyPolicy": "Política de privacidad",
+  "allRightsReserved": "© {year} Shaoula. Todos los derechos reservados.",
+  "madeWithLove": "Hecho con {0}",
+  "footerDescription": "Creando excelencia digital",
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "services": "Servicios",
+    "projects": "Proyectos",
+    "blog": "Blog",
+    "contact": "Contacto"
+  },
+  "home": {
+    "seo": {
+      "title": "Creando excelencia digital",
+      "description": "Adéntrate en nuestro mundo digital, donde la creatividad se encuentra con la innovación. Descubre cómo damos vida a las marcas con diseño, desarrollo y un toque de magia."
+    },
+    "hero": {
+      "title": "Innovar. Diseñar. Inspirar.",
+      "subtitle": "Bienvenido a Shaoula, donde la imaginación se encuentra con la experiencia. Creamos soluciones web que hacen brillar tu marca en línea.",
+      "actions": {
+        "explore": "Explora Nuestros Servicios",
+        "contact": "Ponte En Contacto"
+      }
+    },
+    "services": {
+      "title": "Servicios que Encienden el Éxito Digital",
+      "subtitle": "Descubre un mundo de posibilidades con nuestra amplia gama de servicios. Desde diseño visionario hasta desarrollo de vanguardia, nuestras soluciones están diseñadas para elevar la presencia en línea de tu marca.",
+      "button": "Aprende Más Sobre Nuestros Servicios"
+    },
+    "portfolio": {
+      "title": "Explora Nuestra Muestra Digital",
+      "subtitle": "Sumérgete en una colección seleccionada de nuestras mejores creaciones. Nuestro portafolio refleja la artesanía y la innovación que definen nuestro trabajo. Testigo de la transformación de ideas en impresionantes realidades digitales.",
+      "button": "Explora Nuestros Proyectos"
+    },
+    "testimonials": {
+      "title": "Nuestro Éxito A Través De Tus Palabras"
+    },
+    "team": {
+      "title": "Creando Sueños Digitales: Nuestra Historia en Shaoula",
+      "subtitle": "En Shaoula, somos tejedores de sueños digitales. Combinamos creatividad con experiencia para crear experiencias en línea inmersivas. Nuestra misión es simple: transformar tus visiones en cautivadoras realidades digitales. Con diseños pixel perfectos y desarrollo de vanguardia, elevamos marcas, amplificamos impacto y generamos conexiones duraderas. Bienvenido a Shaoula, donde la innovación se encuentra con la empatía, y tu éxito es nuestro viaje.",
+      "button": "Conoce A Nuestro Equipo"
+    },
+    "blog": {
+      "title": "Explora Nuestros Insights Digitales",
+      "subtitle": "Sumérgete en el mundo de la innovación digital, las tendencias de diseño y las estrategias de negocio con nuestro blog. Creemos en compartir conocimientos y empoderarte con valiosos insights. Ya sea que estés buscando inspiración para el diseño web, consejos de SEO o tendencias de la industria, nuestro blog es tu recurso de referencia. Únete a nosotros en un viaje de descubrimiento, aprendizaje e inspiración.",
+      "button": "Lee Nuestro Blog"
+    }
+  },
+  "services": {
+    "title": "Explora Nuestras Ofertas",
+    "description": "Explora nuestro kit de herramientas digital que incluye diseño web, branding, marketing y más. Vamos a dar forma a tu historia de éxito digital juntos.",
+    "hero": {
+      "eyebrow": "Nuestros Servicios",
+      "title": "Creando Brillantez Digital: Tu Éxito, Nuestra Experiencia",
+      "subtitle": "Bienvenido a la amplia gama de servicios de Shaoula. Explora los servicios que ofrecemos para ver cómo podemos ayudarte a tener éxito en el panorama digital."
+    },
+    "cta": {
+      "title": "Obtén una cotización gratuita",
+      "description": "¿Listo para transformar tu presencia digital? Contáctanos hoy para discutir tu proyecto, y embarquemos juntos en este viaje de creatividad, tecnología e innovación.",
+      "cta": "Obtener una cotización"
+    }
+  },
+  "about": {
+    "seo": {
+      "title": "Descubre Nuestra Historia",
+      "description": "Descubre el viaje de Shaoula - un equipo de soñadores, diseñadores y estrategas. Aprende cómo estamos dando forma a las experiencias digitales."
+    },
+    "hero": {
+      "eyebrow": "Acerca de Nosotros",
+      "title": "Creando Sueños Digitales en Shaoula",
+      "subtitle": "En Shaoula, somos más que una agencia web. Somos los arquitectos de los sueños digitales, dedicados a remodelar las experiencias en línea y empoderar a las marcas para alcanzar nuevas alturas.",
+      "actions": "Síguenos en"
+    }
+  },
+  "projects": {
+    "seo": {
+      "title": "Nuestra Muestra Creativa",
+      "description": "Sumérgete en nuestro universo creativo y sé testigo de los proyectos que nos definen. Cada trabajo es un testimonio de nuestro compromiso con la excelencia."
+    },
+    "hero": {
+      "eyebrow": "Nuestros Proyectos",
+      "title": "Donde la Creatividad se Encuentra con la Excelencia.",
+      "subtitle": "Explora nuestra diversa gama de esfuerzos de diseño, desarrollo y marketing, y descubre cómo Shaoula transforma las ideas en experiencias digitales extraordinarias."
+    },
+    "achievements": {
+      "title": "Logros"
+    }
+  },
+  "blog": "Blog",
+  "article": {
+    "toc": {
+      "title": "Tabla de Contenidos"
+    }
+  }
+}

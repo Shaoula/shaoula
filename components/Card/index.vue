@@ -66,7 +66,7 @@ const nuxtLinkComponent = resolveComponent('NuxtLink')
 
 <style lang="scss" module>
 .Card {
-    @apply py-8 px-6
+  @apply py-8 px-6
     bg-light-50
     border border-neutral-50 rounded shadow
 
@@ -88,15 +88,15 @@ const nuxtLinkComponent = resolveComponent('NuxtLink')
     // }
 
     &__image {
-        @apply grid place-items-center
+      @apply grid place-items-center
         w-full aspect-16/9
         p-4
 
         dark:ring-neutral-800;
 
-        img {
-            @apply max-w-full max-h-full;
-        }
+      img {
+        @apply max-w-full max-h-full;
+      }
     }
 
     &__title {

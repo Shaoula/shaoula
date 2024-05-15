@@ -1,0 +1,11 @@
+# Lang: fr
+
+# title: Digital Marketing
+title: Marketing numérique
+# description: Amplify your brand's voice across the digital symphony. Our digital marketing strategies encompass SEO, content creation, social media harmony, and more – all orchestrated to enhance your online visibility and engagement.
+description: Amplifiez la voix de votre marque à travers la symphonie numérique. Nos stratégies de marketing numérique englobent le référencement, la création de contenu, l'harmonie des médias sociaux et plus encore - le tout orchestré pour améliorer votre visibilité et votre engagement en ligne.
+image: /images/services/digital-marketing.png
+# icon:
+icon: i-ph-rocket-launch-bold
+slug: digital-marketing
+order: 5

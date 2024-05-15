@@ -1,0 +1,161 @@
+{
+  "menu": "Menu",
+  "skipToMain": "Passer au contenu principal",
+  "mainNavigation": "Navigation principale",
+  "getQuote": "Obtenir un devis",
+  "goToHomepage": "Aller à la page d'accueil",
+  "quickLinks": "Liens rapides",
+  "followUs": "Suivez-nous",
+  "newsletter": {
+    "title": "Bulletin",
+    "email": "Adresse e-mail",
+    "placeholder": "Entrez votre adresse e-mail",
+    "submit": "Souscrire",
+    "description": "Restez au courant des dernières nouvelles et mises à jour de Shaoula.",
+    "consent": "En vous abonnant, vous acceptez avec notre {0} et donnez votre consentement pour recevoir des mises à jour de notre entreprise.",
+    "invalidEmail": "Veuillez saisir une adresse e-mail valide.",
+    "success": "Merci de vous être abonné à notre newsletter!",
+    "error": "Une erreur s'est produite. Veuillez réessayer plus tard."
+  },
+  "privacyPolicy": "Politique de confidentialité",
+  "allRightsReserved": "© {year} Shaoula. Tous droits réservés.",
+  "madeWithLove": "Fait avec {0}",
+  "footerDescription": "Création d'excellence numérique",
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Prestations de service",
+    "projects": "Projets",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "home": {
+    "seo": {
+      "title": "Création d'excellence numérique",
+      "description": "Entrez dans notre monde numérique, où la créativité rencontre l'innovation. Découvrez comment nous donnons vie aux marques avec le design, le développement et une touche de magie."
+    },
+    "hero": {
+      "title": "Innover. Concevoir. Inspirer.",
+      "subtitle": "Bienvenue chez Shaoula, où l'imagination rencontre l'expertise. Nous concevons des solutions web qui font briller votre marque en ligne.",
+      "actions": {
+        "explore": "Découvrez nos services",
+        "contact": "Entrer en contact"
+      }
+    },
+    "services": {
+      "title": "Services qui déclenchent le succès numérique",
+      "subtitle": "Débloquez un monde de possibilités avec notre gamme complète de services. Du design visionnaire au développement de pointe, nos solutions sont conçues pour élever la présence en ligne de votre marque.",
+      "button": "En savoir plus sur nos services"
+    },
+    "portfolio": {
+      "title": "Explorez notre vitrine numérique",
+      "subtitle": "Plongez dans une collection sélectionnée de nos plus belles créations. Notre portfolio reflète l'art et l'innovation qui définissent notre travail. Témoignez de la transformation des idées en de superbes réalités numériques.",
+      "button": "Explorez nos projets"
+    },
+    "testimonials": {
+      "title": "Notre succès à travers vos mots"
+    },
+    "team": {
+      "title": "Création de rêves numériques: Notre histoire chez Shaoula",
+      "subtitle": "Chez Shaoula, nous sommes des tisserands de rêves numériques. Nous mélangeons créativité et expertise pour créer des expériences en ligne immersives. Notre mission est simple: transformer vos visions en réalités numériques captivantes. Avec des designs parfaits au pixel près et un développement de pointe, nous élevons les marques, amplifions l'impact et créons des connexions durables. Bienvenue chez Shaoula, où l'innovation rencontre l'empathie et votre succès est notre voyage.",
+      "button": "Rencontrez notre équipe"
+    },
+    "blog": {
+      "title": "Explorez nos idées numériques",
+      "subtitle": "Plongez dans le monde de l'innovation numérique, des tendances du design et des stratégies commerciales avec notre blog. Nous croyons au partage des connaissances et à votre autonomisation avec des informations précieuses. Que vous recherchiez de l'inspiration pour la conception de sites Web, des conseils SEO ou des tendances de l'industrie, notre blog est votre ressource incontournable. Rejoignez-nous dans un voyage de découverte, d'apprentissage et d'inspiration.",
+      "button": "Lire notre blog"
+    }
+  },
+  "services": {
+    "title": "Explorez nos offres",
+    "description": "Explorez notre boîte à outils numérique qui comprend la conception de sites Web, le branding, le marketing et plus encore. Construisons ensemble votre histoire de succès numérique.",
+    "hero": {
+      "eyebrow": "Nos services",
+      "title": "Création de brillance numérique: votre succès, notre expertise",
+      "subtitle": "Bienvenue dans la gamme complète de services de Shaoula. Explorez les services que nous offrons pour voir comment nous pouvons vous aider à réussir dans le paysage numérique."
+    },
+    "cta": {
+      "title": "Obtenez un devis gratuit",
+      "description": "Prêt à transformer votre présence numérique? Contactez-nous aujourd'hui pour discuter de votre projet et embarquons ensemble dans ce voyage de créativité, de technologie et d'innovation.",
+      "cta": "Obtenir un devis"
+    }
+  },
+  "about": {
+    "seo": {
+      "title": "Découvrez notre histoire",
+      "description": "Découvrez le voyage de Shaoula - une équipe de rêveurs, de designers et de stratèges. Apprenez comment nous remodelons les expériences numériques."
+    },
+    "hero": {
+      "eyebrow": "À propos de nous",
+      "title": "Création de rêves numériques chez Shaoula",
+      "subtitle": "Chez Shaoula, nous sommes plus qu'une simple agence web. Nous sommes les architectes des rêves numériques, dédiés à remodeler les expériences en ligne et à permettre aux marques d'atteindre de nouveaux sommets.",
+      "actions": "Suivez-nous sur"
+    }
+  },
+  "projects": {
+    "seo": {
+      "title": "Notre vitrine créative",
+      "description": "Plongez dans notre univers créatif et découvrez les projets qui nous définissent. Chaque travail est un témoignage de notre engagement envers l'excellence."
+    },
+    "hero": {
+      "eyebrow": "Nos projets",
+      "title": "Là où la créativité rencontre l'excellence.",
+      "subtitle": "Explorez notre gamme diversifiée de projets de conception, de développement et de marketing, et découvrez comment Shaoula transforme les idées en expériences numériques extraordinaires."
+    },
+    "achievements": {
+      "title": "Réalisations"
+    }
+  },
+  "blog": {
+    "seo": {
+      "title": "Découvrez nos idées numériques",
+      "description": "Explorez notre blog pour des conseils, des tendances et des idées sur le design, le développement et le marketing numériques. Restez à jour avec les dernières nouvelles de l'industrie."
+    },
+    "hero": {
+      "eyebrow": "Notre blog",
+      "title": "Explorez nos idées numériques",
+      "subtitle": "Plongez dans le monde de l'innovation numérique, des tendances du design et des stratégies commerciales avec notre blog. Rejoignez-nous dans un voyage de découverte, d'apprentissage et d'inspiration."
+    }
+  },
+  "article": {
+    "toc": {
+      "title": "Table des matières"
+    }
+  },
+  "contact": {
+    "seo": {
+      "title": "Entrer en contact",
+      "description": "Prêt à transformer votre présence numérique? Contactez Shaoula aujourd'hui pour discuter de votre projet et embarquons ensemble dans ce voyage de créativité, de technologie et d'innovation."
+    },
+    "hero": {
+      "eyebrow": "Contactez-nous",
+      "title": "Prêt à transformer votre présence numérique?",
+      "subtitle": "Contactez Shaoula aujourd'hui pour discuter de votre projet et embarquons ensemble dans ce voyage de créativité, de technologie et d'innovation."
+    },
+    "form": {
+      "name": {
+        "label": "Nom",
+        "placeholder": "Entrez votre nom"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Entrez votre adresse e-mail"
+      },
+      "phone": {
+        "label": "Téléphone",
+        "placeholder": "Entrez votre numéro de téléphone"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Entrez votre message"
+
+      },
+      "submit": "Envoyer",
+      "success": "Merci pour votre message! Nous vous contacterons bientôt.",
+      "error": "Une erreur s'est produite. Veuillez réessayer plus tard."
+    },
+    "partners": {
+      "title": "Partenaires"
+    }
+  }
+}

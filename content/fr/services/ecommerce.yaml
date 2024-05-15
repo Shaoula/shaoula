@@ -1,0 +1,10 @@
+# Lang: fr
+
+# title: E-Commerce Solutions
+title: Solutions de commerce électronique
+# description: Confidently navigate the online retail realm. Our e-commerce solutions empower businesses with user-friendly platforms, secure payment gateways, and intuitive product catalogs, offering a seamless shopping experience.
+description: Naviguez en toute confiance dans le monde du commerce en ligne. Nos solutions de commerce électronique permettent aux entreprises de disposer de plates-formes conviviales, de passerelles de paiement sécurisées et de catalogues de produits intuitifs, offrant une expérience d'achat sans faille.
+image: /images/services/ecommerce.png
+icon: i-ph-shopping-cart-bold
+slug: ecommerce
+order: 4

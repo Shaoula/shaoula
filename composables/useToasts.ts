@@ -14,8 +14,7 @@ interface Toast {
   hideProgressBar?: false
   closeOnClick?: boolean
   closeButton?: boolean
-  //   placement?: 'top-left' | 'top' | 'top-right' | 'bottom-left' | 'bottom' | 'bottom-right'
-  placement?: string
+  placement?: 'top-left' | 'top' | 'top-right' | 'bottom-right' | 'bottom' | 'bottom-left'
 }
 
 const useToasts = defineStore('toastStore', {
@@ -23,9 +22,9 @@ const useToasts = defineStore('toastStore', {
     toasts: [] as Toast[],
   }),
   actions: {
-    toast(message: string | Toast) {
-      const toast = typeof message === 'string' ? { message } : message
-      toast.id = `toast-${Math.random().toString(36).substr(2, 9)}`
+    toast(message: Toast | string) {
+      const toast = (typeof message === 'string' ? { message } : message) as Toast
+      toast.id = `toast-${Math.random().toString(36).substring(2, 9)}`
       // this.toasts.push(toast)
       this.toasts.unshift(toast)
     },

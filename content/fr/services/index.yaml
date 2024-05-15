@@ -1,0 +1,30 @@
+# Lang: fr
+
+body:
+  - title: Notre approche
+    # image:
+    #   url: "/images/our-journey.jpg"
+    #   alt: "Our Journey"
+    # description: "Creativity and expertise are the pillars of our foundation. Beyond being a conventional web agency, we take pride in being digital architects. We weave strategies, designs, and development into seamless narratives that elevate brands."
+    description: 'Chez Shaoula, nous investissons dans plus que des projets; nous investissons dans des relations. Avec une approche empathique, nous nous immergeons dans votre vision, travaillant en collaboration pour créer des solutions numériques qui dépassent les attentes.'
+  - title: Prêt à commencer?
+    # description: "Ready to Get Started? Ready to transform your digital presence? Contact us today to discuss your project, and let's embark on this journey of creativity, technology, and innovation together."
+    description: 'Prêt à commencer? Prêt à transformer votre présence numérique? Contactez-nous aujourd''hui pour discuter de votre projet et embarquons ensemble dans ce voyage de créativité, de technologie et d''innovation.'
+    cta:
+      # label: "Get a Quote"
+      label: Obtenir un devis
+      href: /contact
+  - title: Explorez notre portfolio
+    # description: "Visit our portfolio to see how we've empowered businesses like yours with our digital solutions. Each project tells a unique story of success and innovation."
+    description: 'Visitez notre portfolio pour voir comment nous avons permis à des entreprises comme la vôtre de bénéficier de nos solutions numériques. Chaque projet raconte une histoire unique de succès et d''innovation.'
+    cta:
+      # label: "Explore Our Portfolio"
+      label: Explorez notre portfolio
+      href: /projects
+  - title: Vous avez des questions?
+    # description: "We're here to help. If you have any questions or need further information about our services, please don't hesitate to reach out to our team."
+    description: 'Nous sommes là pour aider. Si vous avez des questions ou avez besoin de plus d''informations sur nos services, n''hésitez pas à contacter notre équipe.'
+    cta:
+      # label: "Contact Us"
+      label: Contactez-nous
+      href: /contact

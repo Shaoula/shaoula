@@ -1,0 +1,20 @@
+# Lang: fr
+
+# title: BuildMasters ERP Program
+title: Programme ERP BuildMasters
+# description: "With the ERP program we worked on, we helped this construction company improve their business efficiency by up to 220%. Our ongoing collaboration ensured they achieved 100% satisfaction, and we continue to support their growth and success."
+description: 'Avec le programme ERP sur lequel nous avons travaillé, nous avons aidé cette entreprise de construction à améliorer son efficacité commerciale jusqu''à 220%. Notre collaboration continue a assuré qu''ils ont atteint 100% de satisfaction, et nous continuons à soutenir leur croissance et leur succès.'
+image:
+  url: /images/portfolio/buildMasters.webp
+  # alt: "BuildMasters ERP Program"
+  alt: Programme ERP BuildMasters
+achievements:
+  # - 220% Improved Efficiency
+  - 220% d'efficacité améliorée
+  # - 100% Customer Satisfaction
+  - 100% de satisfaction client
+categories:
+  # - ERP Development
+  - Développement ERP
+  # - Business Efficiency
+  - Efficacité commerciale

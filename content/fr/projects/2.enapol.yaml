@@ -1,0 +1,23 @@
+# Lang: fr
+
+# title: Enapol Polycarbonate
+title: Enapol Polycarbonate
+# description: "We achieved 100% customer satisfaction with this project and supported them to grow their business up to 340% in one year with our early-stage work. Our web design and development transformed their online presence, providing a seamless experience for their clients in the polycarbonate industry. In addition, our marketing strategy helped them increase their sales by an impressive 35% for each month."
+description: 'Nous avons atteint 100% de satisfaction client avec ce projet et les avons soutenus pour développer leur activité jusqu''à 340% en un an avec notre travail au stade initial. Notre conception et développement Web a transformé leur présence en ligne, offrant une expérience transparente pour leurs clients dans l''industrie du polycarbonate. De plus, notre stratégie marketing les a aidés à augmenter leurs ventes de 35% pour chaque mois.'
+image:
+  url: /images/portfolio/enapol.webp
+  alt: Enapol Polycarbonate
+achievements:
+  # - "100% Customer Satisfaction"
+  - '100% de satisfaction client'
+  # - "340% Business Growth in One Year"
+  - '340% de croissance de l''entreprise en un an'
+  # - "35% Monthly Sales Increase (Marketing)"
+  - '35% d''augmentation des ventes mensuelles (marketing)'
+categories:
+  # - "Web Design"
+  - Conception Web
+  # - "Web Development"
+  - Développement Web
+  # - "Marketing Strategy"
+  - Stratégie marketing

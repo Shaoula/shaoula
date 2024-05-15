@@ -1,0 +1,160 @@
+{
+  "menu": "Menü",
+  "skipToMain": "Ana içeriğe atla",
+  "mainNavigation": "Ana Navigasyon",
+  "getQuote": "Teklif Al",
+  "goToHomepage": "Ana Sayfaya Git",
+  "quickLinks": "Hızlı Linkler",
+  "followUs": "Bizi Takip Edin",
+  "newsletter": {
+    "title": "Bülten",
+    "email": "E-posta adresi",
+    "placeholder": "E-posta adresinizi girin",
+    "submit": "Abone Ol",
+    "description": "En son haberleri ve güncellemeleri Shaoula'dan alın.",
+    "consent": "Bültenimize abone olarak, {0} kabul etmiş olursunuz.",
+    "invalidEmail": "Lütfen geçerli bir e-posta adresi girin.",
+    "success": "Aboneliğiniz için teşekkür ederiz.",
+    "error": "Bir şeyler ters gitti. Lütfen daha sonra tekrar deneyin."
+  },
+  "privacyPolicy": "Gizlilik Politikası",
+  "allRightsReserved": "© {year} Shaoula. Tüm hakları saklıdır.",
+  "madeWithLove": "{0} ile yapıldı",
+  "footerDescription": "Dijital Mükemmelliği Yaratmak",
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "services": "Hizmetler",
+    "projects": "Projeler",
+    "blog": "Blog",
+    "contact": "İletişim"
+  },
+  "home": {
+    "seo": {
+      "title": "Dijital Mükemmelliği Yaratmak",
+      "description": "Shaoula'da hayal gücü uzmanlıkla buluşuyor. Markanızı çevrimiçi olarak parlatan web çözümleri oluşturuyoruz."
+    },
+    "hero": {
+      "title": "Yenilikçilik. Tasarım. İlham.",
+      "subtitle": "Shaoula'da hayal gücü uzmanlıkla buluşuyor. Markanızı çevrimiçi olarak parlatan web çözümleri oluşturuyoruz.",
+      "actions": {
+        "explore": "Hizmetlerimizi Keşfedin",
+        "contact": "İletişime Geçin"
+      }
+    },
+    "services": {
+      "title": "Dijital Başarıyı Tetikleyen Hizmetler",
+      "subtitle": "Kapsamlı hizmet yelpazemizle bir dünya fırsatını kilidini açın. Vizyoner tasarımdan son teknoloji geliştirmeye kadar çözümlerimiz, markanızın çevrimiçi varlığını yükseltmek için özel olarak tasarlanmıştır.",
+      "button": "Hizmetlerimizi Keşfedin"
+    },
+    "portfolio": {
+      "title": "Dijital Vitrinimizi Keşfedin",
+      "subtitle": "Seçkin koleksiyonumuzun derinliklerine dalın. Portföyümüz, çalışmalarımızı tanımlayan sanat ve yeniliği yansıtır. Fikirlerin muhteşem dijital gerçekliklere dönüşümünü görün.",
+      "button": "Projelerimizi Keşfedin"
+    },
+    "testimonials": {
+      "title": "Sizin Sözlerinizle Başarımız"
+    },
+    "team": {
+      "title": "Dijital Hayalleri Şekillendirmek: Shaoula'daki Hikayemiz",
+      "subtitle": "Shaoula'da dijital hayal dokuyucularıyız. Yaratıcılığı uzmanlıkla birleştirerek sürükleyici çevrimiçi deneyimler oluşturuyoruz. Misyonumuz basit: vizyonlarınızı büyüleyici dijital gerçekliklere dönüştürmek. Piksel mükemmel tasarımlar ve son teknoloji geliştirme ile markaları yükseltiyor, etkiyi artırıyor ve kalıcı bağlantılar kuruyoruz. Yeniliğin empatiyle buluştuğu Shaoula'ya hoş geldiniz ve başarınız bizim yolculuğumuzdur.",
+      "button": "Ekibimizi Tanıyın"
+    },
+    "blog": {
+      "title": "Dijital İlham ve Bilgiler",
+      "subtitle": "Dijital inovasyon, tasarım trendleri ve iş stratejileri dünyasına blogumuzla dalın. Bilgi paylaşımına ve değerli bilgilerle sizi güçlendirmeye inanıyoruz. Web tasarım ilhamı, SEO ipuçları veya sektör trendleri arıyorsanız, blogumuz sizin için bir kaynaktır. Keşif, öğrenme ve ilham yolculuğumuza katılın.",
+      "button": "Blogumuzu Okuyun"
+    }
+  },
+  "services": {
+    "title": "Hizmetlerimizi Keşfedin",
+    "description": "Web tasarımı, markalaşma, pazarlama ve daha fazlasını içeren dijital araç setimizi keşfedin. Birlikte dijital başarı hikayenizi şekillendirelim.",
+    "hero": {
+      "eyebrow": "Hizmetlerimiz",
+      "title": "Dijital Mükemmelliği Yaratmak: Başarınız, Uzmanlığımız",
+      "subtitle": "Shaoula'nın kapsamlı hizmet yelpazesine hoş geldiniz. Dijital manzarada başarılı olmanıza nasıl yardımcı olabileceğimizi görmek için sunduğumuz hizmetleri keşfedin."
+    },
+    "cta": {
+      "title": "Ücretsiz Teklif Al",
+      "description": "Dijital varlığınızı dönüştürmeye hazır mısınız? Bugün bizimle iletişime geçin, projenizi tartışalım ve birlikte yaratıcılık, teknoloji ve inovasyon yolculuğuna çıkalım.",
+      "cta": "Teklif Al"
+    }
+  },
+  "about": {
+    "seo": {
+      "title": "Hikayemizi Keşfedin",
+      "description": "Hayal gücü, tasarımcılar ve stratejistlerden oluşan bir ekip olan Shaoula'nın yolculuğunu keşfedin. Dijital deneyimleri nasıl yeniden şekillendirdiğimizi öğrenin."
+    },
+    "hero": {
+      "eyebrow": "Hakkımızda",
+      "title": "Shaoula'da Dijital Hayaller Dokuyoruz",
+      "subtitle": "Shaoula'da dijital hayal dokuyucularıyız. Dijital deneyimleri yeniden şekillendirmeye ve markaların yeni zirvelere ulaşmasına yardımcı olmaya adanmış dijital hayal mimarlarıyız.",
+      "actions": "Bizi takip edin"
+    }
+  },
+  "projects": {
+    "seo": {
+      "title": "Kreatif Vitrinimizi Keşfedin",
+      "description": "Kreatif evrenimize dalın ve bizi tanımlayan projeleri görün. Her çalışma, mükemmelliğe olan bağlılığımızın bir kanıtıdır."
+    },
+    "hero": {
+      "eyebrow": "Projelerimiz",
+      "title": "Yaratıcılığın Mükemmelliğe Ulaştığı Yer",
+      "subtitle": "Çeşitli tasarım, geliştirme ve pazarlama çabalarımızı keşfedin ve Shaoula'nın fikirleri olağanüstü dijital deneyimlere nasıl dönüştürdüğünü keşfedin."
+    },
+    "achievements": {
+      "title": "Başarılar"
+    }
+  },
+  "blog": {
+    "seo": {
+      "title": "Dijital İlham ve Bilgiler",
+      "description": "Dijital inovasyon, tasarım trendleri ve iş stratejileri dünyasına blogumuzla dalın. Bilgi paylaşımına ve değerli bilgilerle sizi güçlendirmeye inanıyoruz."
+    },
+    "hero": {
+      "eyebrow": "Blog",
+      "title": "Dijital İlham ve Bilgiler",
+      "subtitle": "Dijital inovasyon, tasarım trendleri ve iş stratejileri dünyasına blogumuzla dalın. Bilgi paylaşımına ve değerli bilgilerle sizi güçlendirmeye inanıyoruz."
+    }
+  },
+  "article": {
+    "toc": {
+      "title": "İçindekiler"
+    }
+  },
+  "contact": {
+    "seo": {
+      "title": "İletişime Geçin",
+      "description": "Markanızı yeni zirvelere taşımaya hazır mısınız? Bugün Shaoula ile iletişime geçin, projenizi tartışalım ve birlikte dijital mükemmelliği yaratalım."
+    },
+    "hero": {
+      "eyebrow": "İletişime Geçin",
+      "title": "Birlikte Dijital Mükemmelliği Yaratalım",
+      "subtitle": "Markanızı yeni zirvelere taşımaya hazır mısınız? Bugün Shaoula ile iletişime geçin, projenizi tartışalım ve birlikte dijital mükemmelliği yaratalım."
+    },
+    "form": {
+      "name": {
+        "label": "Adınız",
+        "placeholder": "Adınızı girin"
+      },
+      "email": {
+        "label": "E-posta",
+        "placeholder": "E-posta adresinizi girin"
+      },
+      "phone": {
+        "label": "Telefon",
+        "placeholder": "Telefon numaranızı girin"
+      },
+      "message": {
+        "label": "Mesaj",
+        "placeholder": "Mesajınızı girin"
+      },
+      "submit": "Mesaj Gönder",
+      "success": "Bize ulaştığınız için teşekkür ederiz! En kısa sürede size geri döneceğiz.",
+      "error": "Bir hata oluştu. Lütfen daha sonra tekrar deneyin."
+    },
+    "partners": {
+      "title": "Ortaklarımız"
+    }
+  }
+}

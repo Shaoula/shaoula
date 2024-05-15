@@ -5,16 +5,19 @@ import { socials } from '~/constants/nav'
 
 const route = useRoute()
 
-defineOgImage({
-  component: 'Hero',
-  eyebrow: 'About Us',
-  title: 'Crafting Digital Dreams at Shaoula',
-  subtitle: 'At Shaoula, we\'re more than just a web agency. We\'re the architects of digital dreams, dedicated to reshaping online experiences and empowering brands to reach new heights.',
-})
+const { t } = useI18n()
+const localePath = useLocalePath()
+
+// defineOgImage({
+//   component: 'Hero',
+//   eyebrow: 'About Us',
+//   title: 'Crafting Digital Dreams at Shaoula',
+//   subtitle: 'At Shaoula, we\'re more than just a web agency. We\'re the architects of digital dreams, dedicated to reshaping online experiences and empowering brands to reach new heights.',
+// })
 
 useSeoMeta({
-  title: 'Discover Our Story',
-  description: 'Uncover the journey of Shaoula - a team of dreamers, designers, and strategists. Learn how we\'re reshaping digital experiences.',
+  title: t('about.seo.title'),
+  description: t('about.seo.description'),
 })
 
 // const copy = await queryContent('about').findOne()
@@ -31,9 +34,9 @@ const isMobile = computed(() => !breakpoints.lg.value)
 //   },
 // })
 
-const { data } = await useAsyncData(route.path, () => queryContent(route.path).only(['body']).findOne())
+const { data } = await useAsyncData(route.path, async () => await queryContent(route.path).only(['body']).findOne())
 
-const sections = data.value?.body
+const sections = data.value?.body as unknown as { title: string, description: string, cta?: { href: string, text: string } }[] ?? []
 </script>
 
 <template>
@@ -41,36 +44,32 @@ const sections = data.value?.body
     <template #hero>
       <div :class="$style.Hero">
         <p :class="$style.Hero__eyebrow">
-          About Us
+          {{ $t('about.hero.eyebrow') }}
         </p>
-        <h2 :class="$style.Hero__title">
-          Crafting Digital Dreams at Shaoula
-        </h2>
+        <h1 :class="$style.Hero__title">
+          {{ $t('about.hero.title') }}
+        </h1>
         <h5 :class="$style.Hero__subtitle">
-          At Shaoula, we're more than just a web agency. We're the architects of digital dreams, dedicated to reshaping online experiences and empowering brands to reach new heights.
+          {{ $t('about.hero.subtitle') }}
         </h5>
         <div :class="$style.Hero__actions">
-          <p>Follow us on</p>
+          <p>{{ $t('about.hero.actions') }}</p>
           <Button
-            v-for="social in socials"
-            :key="social.icon"
-            :href="social.path"
-            variant="soft"
+            v-for="social in socials" :key="social.icon" :href="localePath(social.path)" variant="soft"
             :size="isMobile ? 'md' : 'lg'"
-            icon-only
-            :aria-label="social.name"
-            target="_blank"
+            :icon-only="true"
+            :aria-label="social.name" target="_blank"
           >
-            <Icon :name="social.icon ?? 'i-ph-facebook-logo-bold' ?? 'i-ph-linkedin-logo-bold' ?? 'i-ph-twitter-logo-bold' ?? 'i-ph-instagram-logo-bold'" color="text-neutral" />
+            <Icon
+              :name="social.icon ?? 'i-ph-facebook-logo-bold' ?? 'i-ph-linkedin-logo-bold' ?? 'i-ph-twitter-logo-bold' ?? 'i-ph-instagram-logo-bold'"
+              color="text-neutral"
+            />
           </Button>
         </div>
       </div>
     </template>
 
-    <template
-      v-for="(section, idx) in sections"
-      :key="idx"
-    >
+    <template v-for="(section, idx) in sections" :key="idx">
       <Divider class="text-neutral-2 dark:text-neutral-8" />
 
       <section :class="$style.Section">
@@ -90,57 +89,37 @@ const sections = data.value?.body
         </div>
         <div v-if="section.cta" class="$style.Section__description__cta">
           <Button
-            :size="isMobile ? 'md' : 'lg'"
-            target="_blank"
-            v-bind="section.cta"
+            :size="isMobile ? 'md' : 'lg'" target="_blank" v-bind="section.cta"
+            :href="localePath(section.cta.href)"
           />
         </div>
         <!-- </div> -->
       </section>
     </template>
-  </nuxtlayout>
+  </NuxtLayout>
 </template>
 
 <style lang="scss" module>
-.Hero{
-    @apply flex flex-col items-center justify-center gap-8
-    h-full;
+.Hero {
+  @apply flex flex-col items-center justify-center gap-8 h-full;
 
-    &__eyebrow {
-        @apply text-md font-semibold text-neutral-500 text-center  tracking-wider uppercase
+  &__eyebrow {
+    @apply text-md font-semibold text-neutral-500 text-center tracking-wider uppercase md:(text-lg) lg:(text-xl) dark:(text-neutral-400);
+  }
 
-        md:(text-lg)
-        lg:(text-xl)
+  &__title {
+    @apply text-4xl font-bold text-neutral-900 text-center leading-normal md:(text-5xl) lg:(text-6xl) dark:(text-neutral-100);
+    text-wrap: balance;
+  }
 
-        dark:(text-neutral-400);
-    }
+  &__subtitle {
+    @apply text-lg font-medium text-neutral-600 text-center md:(text-xl) lg:(text-2xl) dark:(text-neutral-400);
+    text-wrap: balance;
+  }
 
-    &__title {
-        @apply text-4xl font-bold text-neutral-900 text-center leading-normal
-
-        md:(text-5xl)
-        lg:(text-6xl)
-
-        dark:(text-neutral-100);
-        text-wrap: balance;
-    }
-
-    &__subtitle {
-        @apply text-lg font-medium text-neutral-600 text-center
-
-        md:(text-xl)
-        lg:(text-2xl)
-
-        dark:(text-neutral-400);
-        text-wrap: balance;
-    }
-
-    &__actions {
-      @apply flex items-center gap-4
-      text-neutral-500
-
-      dark:(text-neutral-400);
-    }
+  &__actions {
+    @apply flex items-center gap-4 text-neutral-500 dark:(text-neutral-400);
+  }
 }
 
 // .Section {
@@ -183,30 +162,18 @@ const sections = data.value?.body
 //     // }
 // }
 .Section {
-  @apply flex flex-col items-center
-  py-10 gap-8;
+  @apply flex flex-col items-center py-10 gap-8;
 
   &__title {
-    @apply text-4xl font-bold text-center text-neutral-700
-
-    lg:(text-5xl)
-
-    dark:(text-neutral-300);
+    @apply text-4xl font-bold text-center text-neutral-700 lg:(text-5xl) dark:(text-neutral-300);
   }
 
   &__description {
-    @apply text-center text-xl font-light text-neutral-500
-    max-w-screen-lg
-
-    lg:(text-2xl)
-
-    dark:(text-neutral-400);
+    @apply text-center text-xl font-light text-neutral-500 max-w-screen-lg lg:(text-2xl) dark:(text-neutral-400);
   }
 
   &__content {
-    @apply grid grid-cols-1 gap-4
-
-    lg:(grid-cols-2);
+    @apply grid grid-cols-1 gap-4 lg:(grid-cols-2);
   }
 }
 </style>

@@ -1,4 +1,3 @@
-import process from 'node:process'
 import { pwa } from './config/pwa'
 import { appDescription } from './constants/index'
 
@@ -10,37 +9,38 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@unocss/nuxt',
     '@pinia/nuxt',
-    // '@nuxtjs/color-mode',
+    '@nuxtjs/color-mode',
     '@vite-pwa/nuxt',
     'nuxt-headlessui',
     '@nuxt/image',
-    '@nuxtseo/module',
-    // 'nuxt-security',
+    '@nuxtjs/seo',
+    'nuxt-security',
     'nuxt-vercel-analytics',
+    '@nuxtjs/i18n',
+    'nuxt-icon',
+    '@nuxthq/studio',
+    '@nuxt/eslint',
   ],
 
-  // appConfig: {
-  //   umami: {
-  //     id: 'ca446218-f75b-457f-973a-07bb30c5c2ce',
-  //     host: 'https://analytics.eu.umami.is',
-  //   },
-  // },
-
   'runtimeConfig': {
-    brevoApiKey: process.env.NUXT_BREVO_API_KEY,
-    brevoSmtpKey: process.env.NUXT_BREVO_SMTP_KEY,
-    smtpHost: process.env.NUXT_SMTP_HOST,
-    smtpPort: process.env.NUXT_SMTP_PORT,
-    smtpUser: process.env.NUXT_SMTP_USER,
-    smtpPass: process.env.NUXT_SMTP_PASS,
-    contactEmail: process.env.NUXT_CONTACT_EMAIL,
+    brevo: {
+      apiKey: '',
+      smtpKey: '',
+    },
+    smtp: {
+      host: '',
+      port: '',
+      user: '',
+      pass: '',
+    },
+    contactEmail: '',
   },
 
   'experimental': {
     // when using generate, payload js assets included in sw precache manifest
     // but missing on offline, disabling extraction it until fixed
     payloadExtraction: false,
-    inlineSSRStyles: false,
+    // inlineSSRStyles: false,
     renderJsonPayloads: true,
     typedPages: true,
   },
@@ -49,10 +49,17 @@ export default defineNuxtConfig({
     '@unocss/reset/tailwind.css',
   ],
 
-  // colorMode: {
-  // },
+  'colorMode': {
+    preference: 'system',
+    fallback: 'dark',
+  },
 
   'nitro': {
+    esbuild: {
+      options: {
+        target: 'esnext',
+      },
+    },
     prerender: {
       crawlLinks: true,
     },
@@ -95,6 +102,16 @@ export default defineNuxtConfig({
     },
   },
 
+  'features': {
+    inlineStyles: false,
+  },
+
+  'eslint': {
+    config: {
+      standalone: false,
+    },
+  },
+
   'headlessui': {
     prefix: 'Hui',
   },
@@ -104,7 +121,7 @@ export default defineNuxtConfig({
     identity: {
       type: 'Organization',
     },
-    twitter: '@shaoulagroup',
+    twitter: '@shaoulahq',
   },
 
   'sitemap': {
@@ -126,5 +143,76 @@ export default defineNuxtConfig({
   'nuxt-vercel-analytics': {
     mode: 'auto',
     debug: true,
+  },
+
+  // I18n
+  'i18n': {
+    // Active locales: English, Turkish, French, German, Russian,
+    locales: [
+      // English
+      {
+        code: 'en',
+        iso: 'en-US',
+        name: 'English',
+        file: 'en-US.json',
+      },
+      // Turkish
+      /* {
+        code: 'tr',
+        iso: 'tr-TR',
+        name: 'Türkçe',
+        file: 'tr-TR.json',
+      },
+      // French
+      {
+        code: 'fr',
+        iso: 'fr-FR',
+        name: 'Français',
+        file: 'fr-FR.json',
+      },
+      // German
+      {
+        code: 'de',
+        iso: 'de-DE',
+        name: 'Deutsch',
+        file: 'de-DE.json',
+      },
+      // Russian
+      {
+        code: 'ru',
+        iso: 'ru-RU',
+        name: 'Русский',
+        file: 'ru-RU.json',
+      }, */
+      // Portuguese
+      /* {
+        code: 'pt',
+        iso: 'pt-PT',
+        name: 'Português',
+        file: 'pt-PT.json',
+      }, */
+      // Italian
+      /* {
+        code: 'it',
+        iso: 'it-IT',
+        name: 'Italiano',
+        file: 'it-IT.json',
+      }, */
+      // Spanish
+      /* {
+        code: 'es',
+        iso: 'es-ES',
+        name: 'Español',
+        file: 'es-ES.json',
+      }, */
+    ],
+    lazy: true,
+    langDir: 'locales/',
+    defaultLocale: 'en',
+    strategy: 'prefix_except_default',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+    },
   },
 })

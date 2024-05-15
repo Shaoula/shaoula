@@ -3,7 +3,7 @@ const props = withDefaults(defineProps<{
   variant?: 'bordered' | 'underlined' | 'light' | 'outlined'
   size?: 'sm' | 'md' | 'lg'
   shape?: 'rounded' | 'pilled'
-  label?: string | { label: string; secondaryLabel?: string }
+  label?: string | { label: string, secondaryLabel?: string }
   placeholder?: string
   type?: string
   hint?: string
@@ -41,18 +41,16 @@ defineExpose({
 const $style = useCssModule()
 
 const label = computed(() => {
-  if (typeof props.label === 'string') {
-    return {
-      label: props.label,
-      secondaryLabel: undefined,
-    }
-  }
-
-  if (props.label?.label) {
+  if (typeof props.label !== 'string' && props.label?.label) {
     return {
       label: props.label.label,
       secondaryLabel: props.label.secondaryLabel,
     }
+  }
+
+  return {
+    label: props.label,
+    secondaryLabel: undefined,
   }
 })
 
@@ -163,78 +161,81 @@ const label = computed(() => {
 
     dark:(bg-neutral-900 text-light-100);
 
-    &--error:not(:focus-within), &:focus-within:has(:invalid) {
+    &--error:not(:focus-within),
+    &:focus-within:has(:invalid) {
       @apply ring-2 ring-red-500 ring-opacity-25 border-red-500;
     }
 
-    &--success:not(:focus-within), &:focus-within:has(:valid) {
+    &--success:not(:focus-within),
+    &:focus-within:has(:valid) {
       @apply ring-2 ring-green-500 ring-opacity-25 border-green-500;
     }
 
     &--disabled {
       @apply bg-neutral-50 text-neutral-300 placeholder-neutral-300
       cursor-not-allowed pointer-events-none;
-      /* dark:(bg-gray-700 text-gray-500 placeholder-gray-500) */;
+      /* dark:(bg-gray-700 text-gray-500 placeholder-gray-500) */
     }
 
     &--outlined {
       @apply ring-offset-opacity-50;
     }
 
-  // &--bordered {
-  //   @apply border border-gray-300;
-  //   /* dark:(border-gray-700) */;
-  // }
+    // &--bordered {
+    //   @apply border border-gray-300;
+    //   /* dark:(border-gray-700) */;
+    // }
 
-  // &--underlined {
-  //   @apply border-b border-gray-300;
-  //   /* dark:(border-gray-700) */;
-  // }
+    // &--underlined {
+    //   @apply border-b border-gray-300;
+    //   /* dark:(border-gray-700) */;
+    // }
 
-  // &--light {
-  //   @apply bg-sky-50
-  //   border border-sky-100
+    // &--light {
+    //   @apply bg-sky-50
+    //   border border-sky-100
 
-  //   hover:(bg-white border-sky-100);
-  // }
+    //   hover:(bg-white border-sky-100);
+    // }
 
-  &--size {
-    &-sm {
-      @apply text-sm px-2 py-1;
+    &--size {
+      &-sm {
+        @apply text-sm px-2 py-1;
+      }
+
+      &-md {
+        @apply text-base px-3 py-2;
+      }
+
+      &-lg {
+        @apply text-lg px-4 py-2;
+      }
     }
 
-    &-md {
-      @apply text-base px-3 py-2;
-    }
+    &--shape {
+      &-rounded {
+        @apply rounded-md;
+      }
 
-    &-lg {
-      @apply text-lg px-4 py-2;
+      &-pilled {
+        @apply rounded-full;
+      }
     }
   }
 
-  &--shape {
-    &-rounded {
-      @apply rounded-md;
-    }
-
-    &-pilled {
-      @apply rounded-full;
-    }
-  }
-  }
-
-  &__leading, &__trailing {
+  &__leading,
+  &__trailing {
     @apply flex items-center
     space-x-2
     text-neutral-400 font-medium;
-    /* dark:(text-gray-400) */;
+    /* dark:(text-gray-400) */
   }
 
   &__leading {
     &--divider {
       @apply border-r border-neutral-200
       pr-2;
-      /* dark:(border-gray-700) */;
+      /* dark:(border-gray-700) */
     }
   }
 
@@ -242,7 +243,7 @@ const label = computed(() => {
     &--divider {
       @apply border-l border-neutral-200
       pl-2;
-      /* dark:(border-gray-700) */;
+      /* dark:(border-gray-700) */
     }
   }
 

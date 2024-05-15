@@ -1,4 +1,7 @@
 <script setup lang="ts">
+const { t } = useI18n()
+const localePath = useLocalePath()
+
 const { toast } = useToasts()
 // const services = await queryContent('services/')
 //   .only(['title', 'description', 'icon', 'slug'])
@@ -7,9 +10,11 @@ const { toast } = useToasts()
 
 defineOgImage({
   component: 'Hero',
-  eyebrow: 'Contact Us',
-  title: 'Let\'s Connect and Create Digital Magic Together',
-  subtitle: 'At Shaoula, we\'re here to listen, collaborate, and turn your digital dreams into reality. Get in touch with us to start your next project or discuss how we can help you succeed in the digital realm.',
+  props: {
+    eyebrow: 'Contact Us',
+    title: 'Let\'s Connect and Create Digital Magic Together',
+    subtitle: 'At Shaoula, we\'re here to listen, collaborate, and turn your digital dreams into reality. Get in touch with us to start your next project or discuss how we can help you succeed in the digital realm.',
+  },
 })
 
 useSeoMeta({
@@ -17,7 +22,7 @@ useSeoMeta({
   description: 'Get in touch with us. Whether you have a question, a project idea, or just want to say hello, we\'re here to listen and engage.',
 })
 
-const randomTestimonial = await queryContent('testimonials').only(['name', 'title', 'text', 'image']).limit(1).find()
+const randomTestimonial = await queryContent(localePath('/testimonials')).only(['name', 'title', 'text', 'image']).limit(1).find()
 const testimonial = randomTestimonial[0]
 
 const partners = computed(() => ([
@@ -61,30 +66,32 @@ const textareaEl = resolveComponent('FormTextarea')
 const contactForm = ref([
   {
     name: 'name',
-    label: 'Full name',
-    placeholder: 'John Doe',
+    // label: 'Full name',
+    label: t('contact.form.name.label'),
+    placeholder: t('contact.form.name.placeholder'),
     required: true,
     value: '',
   },
   {
     name: 'email',
-    label: 'Email address',
-    placeholder: 'you@company.com',
+    // label: 'Email address',
+    label: t('contact.form.email.label'),
+    placeholder: t('contact.form.email.placeholder'),
     type: 'email',
     required: true,
     value: '',
   },
   {
     name: 'phone',
-    label: 'Phone number',
-    placeholder: '123-456-7890',
+    label: t('contact.form.phone.label'),
+    placeholder: t('contact.form.phone.placeholder'),
     required: false,
     value: '',
   },
   {
     name: 'message',
-    label: 'Message',
-    placeholder: 'How can we help you?',
+    label: t('contact.form.message.label'),
+    placeholder: t('contact.form.message.placeholder'),
     required: true,
     value: '',
     el: textareaEl,
@@ -118,11 +125,14 @@ async function submitForm() {
 
   if (res.ok) {
     contactForm.value.forEach(field => field.value = '')
-    toast('Thank you for reaching out! We will get back to you shortly.')
+    toast(t('contact.form.success'))
   }
   else {
     console.error(res)
-    toast('An error occurred. Please try again later.')
+    toast({
+      message: t('contact.form.error'),
+      status: 'error',
+    })
   }
 
   isSubmitting.value = false
@@ -134,13 +144,16 @@ async function submitForm() {
     <template #hero>
       <div :class="$style.Hero">
         <p :class="$style.Hero__eyebrow">
-          Contact Us
+          <!-- Contact Us -->
+          {{ t('contact.hero.eyebrow') }}
         </p>
         <h2 :class="$style.Hero__title">
-          Let's Connect and Create Digital Magic Together
+          <!-- Let's Connect and Create Digital Magic Together -->
+          {{ t('contact.hero.title') }}
         </h2>
         <h5 :class="$style.Hero__subtitle">
-          At Shaoula, we're here to listen, collaborate, and turn your digital dreams into reality. Get in touch with us to start your next project or discuss how we can help you succeed in the digital realm.
+          <!-- At Shaoula, we're here to listen, collaborate, and turn your digital dreams into reality. Get in touch with us to start your next project or discuss how we can help you succeed in the digital realm. -->
+          {{ t('contact.hero.subtitle') }}
         </h5>
       </div>
     </template>
@@ -192,7 +205,7 @@ async function submitForm() {
         /> -->
         <Button
           type="submit"
-          label="Submit"
+          :label="t('contact.form.submit')"
           :disabled="!isFormValid"
           :loading="isSubmitting"
           :class="$style.Contact__form__submit"
@@ -233,17 +246,16 @@ async function submitForm() {
         </Card>
 
         <div :class="$style.Contact__info__partners">
-          <p>Partnering with</p>
+          <p>{{ t('contact.partners.title') }}</p>
           <div :class="$style.Contact__info__partners__logos">
             <div
               v-for="partner in partners"
               :key="partner.name"
               :class="$style.Contact__info__partners__logos__logo"
             >
-              <Icon
-                :name="`${partner.logo}?mask`"
-                size="8xl"
-                color="text-neutral"
+              <span
+                :class="`${partner.logo}?mask`"
+                class="block h-10 text-8xl text-neutral"
               />
             </div>
           </div>
@@ -255,81 +267,81 @@ async function submitForm() {
 
 <style lang="scss" module>
 .Hero {
-    @apply flex flex-col items-center justify-center gap-8;
+  @apply flex flex-col items-center justify-center gap-8;
 
-    &__eyebrow {
-        @apply text-xl font-semibold text-neutral-500 text-center tracking-wider uppercase dark:(text-neutral-500);
-    }
+  &__eyebrow {
+    @apply text-xl font-semibold text-neutral-500 text-center tracking-wider uppercase dark:(text-neutral-500);
+  }
 
-    &__title {
-        @apply text-6xl font-bold text-neutral-900 text-center leading-normal dark:(text-neutral-100);
-        text-wrap: balance;
-    }
+  &__title {
+    @apply text-6xl font-bold text-neutral-900 text-center leading-normal dark:(text-neutral-100);
+    text-wrap: balance;
+  }
 
-    &__subtitle {
-        @apply text-2xl font-medium text-neutral-600 text-center dark:(text-neutral-400);
-        text-wrap: balance;
-    }
+  &__subtitle {
+    @apply text-2xl font-medium text-neutral-600 text-center dark:(text-neutral-400);
+    text-wrap: balance;
+  }
 }
 
 .Contact {
-    @apply grid grid-cols-1 gap-8 py-16
+  @apply grid grid-cols-1 gap-8 py-16
 
     lg:(grid-cols-2);
 
-    &__form {
-        @apply flex flex-col gap-4;
+  &__form {
+    @apply flex flex-col gap-4;
 
-        &__submit {
-            @apply self-start;
-        }
+    &__submit {
+      @apply self-start;
     }
+  }
 
-    &__info {
-        @apply grid gap-8;
+  &__info {
+    @apply grid gap-8;
 
-        &__partners {
-            @apply flex flex-col gap-2;
+    &__partners {
+      @apply flex flex-col gap-2;
 
-            & > p {
-                @apply text-sm font-semibold text-neutral-6 dark:(text-neutral-5);
-            }
+      & > p {
+        @apply text-sm font-semibold text-neutral-6 dark:(text-neutral-5);
+      }
 
-            &__logos {
-                @apply flex flex-wrap gap-x-8 items-center;
+      &__logos {
+        @apply flex flex-wrap gap-x-8 items-center;
 
-                &__logo {
-                    @apply flex-shrink-0
+        &__logo {
+          @apply flex-shrink-0
                     text-neutral;
 
-                    * {
-                        @apply transition-all duration-500;
-                    }
-                }
-            }
+          * {
+            @apply transition-all duration-500;
+          }
         }
+      }
     }
+  }
 }
 
 .Section {
-    @apply grid grid-cols-1 gap-8 py-16
+  @apply grid grid-cols-1 gap-8 py-16
 
     lg:(grid-cols-2);
 
-    &__content {
-        @apply flex flex-col gap-4;
-    }
+  &__content {
+    @apply flex flex-col gap-4;
+  }
 
-    &__title {
-        @apply text-3xl font-semibold text-neutral-900 dark:(text-neutral-100);
-    }
+  &__title {
+    @apply text-3xl font-semibold text-neutral-900 dark:(text-neutral-100);
+  }
 
-    &__description {
-        @apply text-lg text-neutral-600 dark:(text-neutral-400);
-    }
+  &__description {
+    @apply text-lg text-neutral-600 dark:(text-neutral-400);
+  }
 }
 
-.Testimonial{
+.Testimonial {
   &__card {
     @apply flex flex-col gap-6;
 

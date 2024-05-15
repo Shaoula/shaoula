@@ -1,0 +1,40 @@
+body:
+  - title: Bizim Yolculuğumuz
+    image:
+      url: /images/our-journey.jpg
+      alt: Bizim Yolculuğumuz
+    description: 'Hikayemiz, yaratıcılığın bir kıvılcımı ve mükemmelliğe olan bağlılığımızla başladı. Hayal ile teknoloji arasındaki boşluğu kapatmak için yola çıktık, yankılanan, ilham veren ve kalıcı izler bırakan dijital hayaller yarattık.'
+  - title: Bizi Farklı Kılan Nedir
+    image:
+      url: /images/what-sets-us-apart.jpg
+      alt: Bizi Farklı Kılan Nedir
+    description: 'Yaratıcılık ve uzmanlık temelimizin direkleridir. Geleneksel bir web ajansı olmanın ötesinde, dijital mimarlar olmaktan gurur duyuyoruz. Stratejileri, tasarımları ve geliştirmeleri markaları yükselten sorunsuz anlatılara dokuyoruz.'
+  - title: Yaklaşımımız
+    image:
+      url: /images/our-approach.jpg
+      alt: Yaklaşımımız
+    description: 'Shaoula''da, sadece projelere değil, ilişkilere de yatırım yapıyoruz. Empatik bir yaklaşımla, vizyonunuza kendimizi kaptırıyor, beklentilerin ötesinde dijital çözümler yaratmak için işbirliği içinde çalışıyoruz.'
+  - title: Ekibimiz
+    image:
+      url: /images/our-team.jpg
+      alt: Ekibimiz
+    description: 'Shaoula''nın dijital büyücülüğünün arkasındaki zihinlerle tanışın. Çeşitli disiplinlerden yetenekleri bir araya getiren çeşitli ekibimiz, üstlendiğimiz her projeye benzersiz bir bakış açısı katıyor.'
+  - title: Sözümüz
+    image:
+      url: /images/our-promise.jpg
+      alt: Sözümüz
+    description: 'Shaoula''yı seçtiğinizde, özveri, yaratıcılık ve başarınıza olan bağlılığı seçiyorsunuz. Dijital manzarada sizinle birlikte yol almak, arzularınızı gerçeğe dönüştürmek için buradayız.'
+  - title: Yolculuğumuza Katılın
+    image:
+      url: /images/join-our-journey.jpg
+      alt: Yolculuğumuza Katılın
+    description: 'Başlangıçlardan kurumsal işletmelere, dijital varlığınızı bir başyapıta dönüştürmek için buradayız. İnovasyon, işbirliği ve dijital dönüşüm yolculuğunda bize katılın.'
+    cta:
+      label: Hizmetlerimizi Keşfedin
+      href: /services
+  # -
+  #   title: "Let's Shape the Future Together"
+  #   image:
+  #     url: "/images/lets-shape-the-future-together.jpg"
+  #     alt: "Let's Shape the Future Together"
+  #   description: "Welcome to Shaoula, where dreams meet digital reality. Explore our portfolio, connect with our team, and let's embark on a path to redefine what's possible in the digital realm."

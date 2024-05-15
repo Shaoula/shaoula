@@ -1,0 +1,10 @@
+# Lang: fr
+
+# title: Custom Software Development
+title: Développement de logiciels personnalisés
+# description: Empower your operations with tailored digital symphonies. From automating notes to managing data harmonies, our development team composes solutions that strike the right chords for your unique business needs.
+description: Donnez à vos opérations des symphonies numériques sur mesure. De l'automatisation des notes à la gestion des harmonies de données, notre équipe de développement compose des solutions qui frappent les bonnes cordes pour vos besoins commerciaux uniques.
+image: /images/services/custom-software-development.png
+icon: i-ph-code-bold
+slug: custom-software-development
+order: 6

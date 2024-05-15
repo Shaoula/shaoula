@@ -1,6 +1,6 @@
 <script setup lang="ts">
 interface Toast {
-  id: string
+  id?: string
   message: string
   visual?: string
   action?: string
@@ -18,6 +18,7 @@ interface Toast {
 
 const props = withDefaults(defineProps<Toast>(), {
 // withDefaults(defineProps<Toast>(), {
+  id: `toast-${Math.random().toString(36).substring(2, 9)}`,
   // undo: false,
   timeout: 5000,
   pauseOnFocusLoss: true,
@@ -46,6 +47,17 @@ onMounted(() => {
     setTimeout(() => {
       close()
     }, props.timeout)
+  }
+})
+tryOnMounted(() => {
+  if (props.pauseOnFocusLoss) {
+    window.addEventListener('focus', () => {
+      if (props.timeout) {
+        setTimeout(() => {
+          close()
+        }, props.timeout)
+      }
+    })
   }
 })
 </script>
@@ -112,46 +124,46 @@ onMounted(() => {
 
 <style lang="scss" module>
 .Toast {
-    @apply w-full
+  @apply w-full
     p-4
     bg-light-50
     border border-neutral-50 rounded-md shadow
     pointer-events-auto
 
-    dark:(bg-dark-9 shadow-none border border-neutral-8);
+    dark:(bg-dark-900 shadow-none border border-neutral-800);
 
   &__visual {
-    @apply flex-shrink-0 mr-4
+    @apply flex-shrink-0 mr-4;
   }
 
   &__content {
-    @apply flex flex-col gap-2
+    @apply flex flex-col gap-2;
   }
 
   &__message {
     @apply text-sm
-    flex items-center justify-between gap-2
+    flex items-center justify-between gap-2;
   }
 
   &__actions {
-    @apply flex items-center justify-end gap-2
+    @apply flex items-center justify-end gap-2;
   }
 
   &--success {
-    @apply bg-blue-5 border-blue-4
+    @apply bg-blue-500 border-blue-400
     text-blue-1
-    dark:(bg-blue-9 border-blue-8);
+    dark:(bg-blue-900 border-blue-800);
   }
 
   &--error {
-    @apply bg-rose-6
-    text-rose-1
-    dark:(bg-red-9 border-red-8);
+    @apply bg-rose-600
+    text-rose-100
+    dark:(bg-red-900 border-red-800);
   }
 
   &--warning {
-    @apply bg-amber-6
-    text-amber-1;
+    @apply bg-amber-600
+    text-amber-100;
   }
 }
 </style>

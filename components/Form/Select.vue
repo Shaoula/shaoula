@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const props = defineProps<{
-  label?: string | { label: string; secondaryLabel?: string }
+  label?: string | { label: string, secondaryLabel?: string }
   placeholder?: string
   hint?: string
   disabled?: boolean
@@ -70,38 +70,38 @@ watch(
           :placeholder="placeholder"
         />
       </HuiListboxButton>
-      <Transition
+      <!-- <Transition
         leave-active-class="transition duration-100 ease-in"
         leave-from-class="opacity-100"
         leave-to-class="opacity-0"
+      > -->
+      <HuiListboxOptions
+        :class="$style.Select__options"
       >
-        <HuiListboxOptions
-          :class="$style.Select__options"
+        <HuiListboxOption
+          v-for="item, index in options"
+          v-slot="{ selected, active }"
+          :key="index"
+          :value="item"
+          as="template"
         >
-          <HuiListboxOption
-            v-for="item, index in options"
-            v-slot="{ selected, active }"
-            :key="index"
-            :value="item"
-            as="template"
+          <li
+            :class="[
+              $style.Select__options__option,
+              active ? $style['Select__options__option--active'] : '',
+              selected ? $style['Select__options__option--selected'] : '',
+            ]"
           >
-            <li
-              :class="[
-                $style.Select__options__option,
-                active ? $style['Select__options__option--active'] : '',
-                selected ? $style['Select__options__option--selected'] : '',
-              ]"
-            >
-              <span :class="$style.Select__options__option__text">{{ item }}</span>
-              <Icon
-                v-if="selected"
-                name="i-mdi-check"
-                :class="$style.Select__options__option__icon"
-              />
-            </li>
-          </HuiListboxOption>
-        </HuiListboxOptions>
-      </Transition>
+            <span :class="$style.Select__options__option__text">{{ item }}</span>
+            <Icon
+              v-if="selected"
+              name="i-mdi-check"
+              :class="$style.Select__options__option__icon"
+            />
+          </li>
+        </HuiListboxOption>
+      </HuiListboxOptions>
+      <!-- </Transition> -->
     </HuiListbox>
   </div>
 </template>
@@ -113,17 +113,17 @@ watch(
   relative
   space-y-2;
 
-    &__label {
-        @apply w-full
+  &__label {
+    @apply w-full
         text-sm font-semibold text-gray-800;
-    }
+  }
 
-    &__button {
-        @apply w-full;
-    }
+  &__button {
+    @apply w-full;
+  }
 
-    &__options {
-        @apply absolute top-full left-0
+  &__options {
+    @apply absolute top-full left-0
         w-full max-h-60
         z-10 mt-2 p-2
         bg-white
@@ -131,30 +131,30 @@ watch(
         border border-gray-200 rounded-md
         shadow-lg;
 
-        &__option {
-            @apply flex items-center justify-between
+    &__option {
+      @apply flex items-center justify-between
             w-full h-9
             px-3 py-2
             text-sm text-gray-800
             rounded-md
             cursor-pointer;
 
-            &--active {
-                @apply bg-gray-100;
-            }
+      &--active {
+        @apply bg-gray-100;
+      }
 
-            &--selected {
-                @apply font-semibold;
-            }
+      &--selected {
+        @apply font-semibold;
+      }
 
-            &__text {
-                @apply truncate;
-            }
+      &__text {
+        @apply truncate;
+      }
 
-            &__icon {
-                @apply text-blue-500;
-            }
-        }
+      &__icon {
+        @apply text-blue-500;
+      }
     }
+  }
 }
 </style>

@@ -1,0 +1,16 @@
+# title: Daxtil
+# description: "We developed an early-stage marketing strategy for the startup we are branding. Our innovative approach and strategic guidance are helping them establish a strong foundation in their industry, setting them on a path to success."
+description: 'Markalaştırdığımız startup için erken aşama pazarlama stratejisi geliştirdik. Yenilikçi yaklaşımımız ve stratejik rehberliğimiz, onların sektörde güçlü bir temel oluşturmalarına ve başarıya giden yola çıkmalarına yardımcı oluyor.'
+image:
+  url: /images/portfolio/daxtil.png
+  alt: Daxtil
+achievements:
+  # - "Strategic Branding"
+  - Stratejik Markalaşma
+  # - "Early-Stage Marketing"
+  - Erken Aşama Pazarlama
+categories:
+  # - "Branding"
+  - Markalaşma
+  # - "Marketing Strategy"
+  - Pazarlama Stratejisi

@@ -1,0 +1,8 @@
+# title: E-Commerce Solutions
+title: E-Ticaret Çözümleri
+# description: Confidently navigate the online retail realm. Our e-commerce solutions empower businesses with user-friendly platforms, secure payment gateways, and intuitive product catalogs, offering a seamless shopping experience.
+description: Çevrimiçi perakende alanında güvenle gezinin. E-ticaret çözümlerimiz, kullanıcı dostu platformlar, güvenli ödeme ağ geçitleri ve sezgisel ürün katalogları ile işletmeleri güçlendirerek sorunsuz bir alışveriş deneyimi sunar.
+image: /images/services/ecommerce.png
+icon: i-ph-shopping-cart-bold
+slug: ecommerce
+order: 4

@@ -1,0 +1,11 @@
+title: BuildMasters ERP Programı
+description: 'Üzerinde çalıştığımız ERP programı ile bu inşaat şirketinin iş verimliliğini %220''ye kadar artırmalarına yardımcı olduk. Devam eden iş birliğimiz, %100 memnuniyet elde etmelerini sağladı ve büyümelerine ve başarılarına destek olmaya devam ediyoruz.'
+image:
+  url: /images/portfolio/buildMasters.webp
+  alt: BuildMasters ERP Programı
+achievements:
+  - '%220 İyileştirilmiş Verimlilik'
+  - '%100 Müşteri Memnuniyeti'
+categories:
+  - ERP Geliştirme
+  - İş Verimliliği

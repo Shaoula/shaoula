@@ -1,0 +1,161 @@
+{
+  "menu": "Menu",
+  "skipToMain": "Skip to main content",
+  "mainNavigation": "Main Navigation",
+  "getQuote": "Get a Quote",
+  "goToHomepage": "Go to Homepage",
+  "quickLinks": "Quick Links",
+  "followUs": "Follow Us",
+  "newsletter": {
+    "title": "Newsletter",
+    "email": "Email Address",
+    "placeholder": "Enter your email address",
+    "submit": "Subscribe",
+    "description": "Stay up to date with the latest news and updates from Shaoula.",
+    "consent": "By subscribing you agree to with our {0} and provide consent to receive updates from our company.",
+    "invalidEmail": "Please enter a valid email address.",
+    "success": "Thank you for joining our newsletter!",
+    "error": "An error occurred. Please try again later."
+  },
+  "privacyPolicy": "Privacy Policy",
+  "allRightsReserved": "© {year} Shaoula. All rights reserved.",
+  "madeWithLove": "Made with {0}",
+  "footerDescription": "Crafting Digital Excellence",
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "projects": "Projects",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "home": {
+    "seo": {
+      "title": "Crafting Digital Excellence",
+      "description": "Step into our digital world, where creativity meets innovation. Discover how we bring brands to life with design, development, and a touch of magic."
+    },
+    "hero": {
+      "title": "Innovate. Design. Inspire.",
+      "subtitle": "Welcome to Shaoula, where imagination meets expertise. We craft web solutions that make your brand shine online.",
+      "actions": {
+        "explore": "Explore Our Services",
+        "contact": "Get In Touch"
+      }
+    },
+    "services": {
+      "title": "Services that Ignite Digital Success",
+      "subtitle": "Unlock a world of possibilities with our comprehensive range of services. From visionary design to cutting-edge development, our solutions are tailored to elevate your brand's online presence.",
+      "button": "Learn More About Our Services"
+    },
+    "portfolio": {
+      "title": "Explore Our Digital Showcase",
+      "subtitle": "Dive into a curated collection of our finest creations. Our portfolio reflects the artistry and innovation that define our work. Witness the transformation of ideas into stunning digital realities.",
+      "button": "Explore Our Projects"
+    },
+    "testimonials": {
+      "title": "Our Success Through Your Words"
+    },
+    "team": {
+      "title": "Crafting Digital Dreams: Our Story at Shaoula",
+      "subtitle": "At Shaoula, we're digital dreamweavers. We blend creativity with expertise to craft immersive online experiences. Our mission is simple: to transform your visions into captivating digital realities. With pixel-perfect designs and cutting-edge development, we elevate brands, amplify impact, and spark lasting connections. Welcome to Shaoula, where innovation meets empathy, and your success is our journey.",
+      "button": "Meet Our Team"
+    },
+    "blog": {
+      "title": "Explore Our Digital Insights",
+      "subtitle": "Dive into the world of digital innovation, design trends, and business strategies with our blog. We believe in sharing knowledge and empowering you with valuable insights. Whether you're looking for web design inspiration, SEO tips, or industry trends, our blog is your go-to resource. Join us on a journey of discovery, learning, and inspiration.",
+      "button": "Read Our Blog"
+    }
+  },
+  "services": {
+    "title": "Explore Our Offerings",
+    "description": "Explore our digital toolkit that includes web design, branding, marketing, and more. Let's shape your digital success story together.",
+    "hero": {
+      "eyebrow": "Our Services",
+      "title": "Crafting Digital Brilliance: Your Success, Our Expertise",
+      "subtitle": "Welcome to Shaoula's comprehensive range of services. Explore the services we offer to see how we can help you succeed in the digital landscape."
+    },
+    "cta": {
+      "title": "Get a Free Quote",
+      "description": "Ready to transform your digital presence? Contact us today to discuss your project, and let's embark on this journey of creativity, technology, and innovation together.",
+      "cta": "Get a Quote"
+    }
+  },
+  "about": {
+    "seo": {
+      "title": "Discover Our Story",
+      "description": "Uncover the journey of Shaoula - a team of dreamers, designers, and strategists. Learn how we're reshaping digital experiences."
+    },
+    "hero": {
+      "eyebrow": "About Us",
+      "title": "Crafting Digital Dreams at Shaoula",
+      "subtitle": "At Shaoula, we're more than just a web agency. We're the architects of digital dreams, dedicated to reshaping online experiences and empowering brands to reach new heights.",
+      "actions": "Follow us on"
+    }
+  },
+  "projects": {
+    "seo": {
+      "title": "Our Creative Showcase",
+      "description": "Dive into our creative universe and witness the projects that define us. Each work is a testament to our commitment to excellence."
+    },
+    "hero": {
+      "eyebrow": "Our Projects",
+      "title": " Where Creativity Meets Excellence.",
+      "subtitle": "Explore our diverse range of design, development, and marketing endeavors, and discover how Shaoula transforms ideas into extraordinary digital experiences."
+    },
+    "achievements": {
+      "title": "Achievements"
+    }
+  },
+  "blog": {
+    "seo": {
+      "title": "Digital Insights & Inspiration",
+      "description": "Stay ahead of the curve with our blog. Explore the latest trends, insights, and strategies that will help you navigate the digital landscape."
+    },
+    "hero": {
+      "eyebrow": "Our Blog",
+      "title": "Empowering You with Digital Insights",
+      "subtitle": "Stay ahead of the curve with our blog. Explore the latest trends, insights, and strategies that will help you navigate the digital landscape."
+    }
+  },
+  "article": {
+    "toc": {
+      "title": "Table of Contents"
+    }
+  },
+  "contact": {
+    "seo": {
+      "title": "Get in Touch",
+      "description": "Ready to take your brand to new heights? Contact Shaoula today to discuss your project, and let's craft digital excellence together."
+    },
+    "hero": {
+      "eyebrow": "Contact Us",
+      "title": "Let's Craft Digital Excellence Together",
+      "subtitle": "Ready to take your brand to new heights? Contact Shaoula today to discuss your project, and let's craft digital excellence together."
+    },
+    "form": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Enter your name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Enter your email address"
+      },
+      "phone": {
+        "label": "Phone",
+        "placeholder": "Enter your phone number"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Enter your message"
+
+      },
+      "submit": "Send Message",
+      "success": "Thank you for contacting us! We will get back to you shortly.",
+      "error": "An error occurred. Please try again later."
+    },
+    "partners": {
+      "title": "Our Partners"
+    }
+  }
+}

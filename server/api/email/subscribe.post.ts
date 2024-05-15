@@ -1,22 +1,22 @@
-const apiKey = useRuntimeConfig().brevoApiKey
+const runtimeConfig = useRuntimeConfig()
 
 export default defineEventHandler(async (event) => {
   const reqBody = await readBody(event)
 
   const options = {
-    method: 'POST',
+    method: 'POST' as const,
     headers: {
       'accept': 'application/json',
       'content-type': 'application/json',
-      'api-key': apiKey,
+      'api-key': runtimeConfig.brevo.apiKey,
     },
-    body: JSON.stringify({...JSON.parse(reqBody), listIds: [5]}),
+    body: JSON.stringify({ ...JSON.parse(reqBody), listIds: [5] }),
   }
 
-  const { ok, body } = await fetch('https://api.brevo.com/v3/contacts', options)
+  const data = await $fetch('https://api.brevo.com/v3/contacts', options)
 
-  if (!ok)
-    return new Response(body, { status: 500 })
+  if (!data)
+    return new Response('Failed to subscribe', { status: 500 })
 
   return new Response('OK', { status: 201 })
 })

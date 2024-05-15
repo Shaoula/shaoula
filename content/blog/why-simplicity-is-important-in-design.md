@@ -7,8 +7,7 @@ category: "Design"
 date: "2023-10-15"
 author: "Shaoula"
 image:
-    # url: "/images/blog/simplicity-in-design.jpg"
-    url: "https://images.pexels.com/photos/883757/pexels-photo-883757.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    url: "/images/blog/simplicity-in-design.jpg"
     alt: "Why Simplicity is Important in Design: Tips for Striking the Right Balance"
 head:
     meta:
@@ -50,7 +49,7 @@ head:
           content: ["Simplicity in Design", "Design Tips", "User Experience", "Shaoula", "Minimalistic Design", "Conversion Rate", "Effective Communication", "Navigation Design", "Call to Action", "Google, Apple, Airbnb Designs", "Usability", "Functional Design", "Simplicity in Web Design", "Design Tips", "Typeface Selection", "Color Scheme", "Clutter-Free Design", "Vision of Shaoula"]
         - name: "article:tag"
           content: ["Simplicity in Design", "Design Tips", "User Experience", "Shaoula", "Minimalistic Design", "Conversion Rate", "Effective Communication", "Navigation Design", "Call to Action", "Google, Apple, Airbnb Designs", "Usability", "Functional Design", "Simplicity in Web Design", "Design Tips", "Typeface Selection", "Color Scheme", "Clutter-Free Design", "Vision of Shaoula", "Simplicity in Design", "Design Tips", "User Experience", "Shaoula"]
-        
+
         - name: "title"
           content: "Why Simplicity is Important in Design: Tips for Striking the Right Balance"
         - name: "description"
@@ -72,8 +71,7 @@ navigation:
     title: "Why Simplicity is Important in Design: Tips for Striking the Right Balance"
 ---
 
-
-# Why Simplicity is Important in Design: Tips for Striking the Right Balance 
+# Why Simplicity is Important in Design: Tips for Striking the Right Balance
 
 In the world of design, less truly can be more. The trend toward minimalistic, user-centered design continues to grow, proving the old adage 'simplicity is the ultimate sophistication.' A concept embraced and executed by renowned companies like Apple and Google, simplicity in design can improve usability, enhance user experience, and ultimately boost your bottom line. At [Shaoula](/services), we simplify the intricate, curate the essential, and strike a harmonious balance between aesthetics and functionality.
 
@@ -111,12 +109,11 @@ A simplistic design approach doesn't entail stripping away creativity. Instead, 
 
 6. **Use Colors Wisely**: Effective use of a simple color scheme can enhance your design and guide users' eyes to the important components.
 
-At [Shaoula](/), our design philosophy aligns with simplicity, where we believe distortion often leads to distraction. We strive for simplicity and precision, ensuring our designs aren't just visually appealing but functionally superior as well. 
+At [Shaoula](/), our design philosophy aligns with simplicity, where we believe distortion often leads to distraction. We strive for simplicity and precision, ensuring our designs aren't just visually appealing but functionally superior as well.
 
 Are you looking to apply the power of simplicity to your design needs? [Connect with us](/contact) today. Let’s craft a design that resonates with your brand and your audience.
 
-
-<!-- # Why Simplicity is Important in Design: Tips for Striking the Right Balance 
+<!-- # Why Simplicity is Important in Design: Tips for Striking the Right Balance
 
 In design, there's a well-known principle that 'less is more.' As technology evolves and becomes more complex, the importance of having a simple yet effective design effortlessly stands out. Here at [Shaoula](/services/design), we realize the power of simplicity in design, and guide you towards striking the right balance.
 
@@ -136,7 +133,7 @@ No wonder the world's most successful companies, Google, Apple, and Airbnb, just
 
 Designing simply doesn't mean you have to strip away creativity. It's about making wise choices that improve user experience. Here are some tips:
 
-1. **Respect the White Space**: White space is your friend. It gives elements in your design room to breathe and helps guide the reader's eye. 
+1. **Respect the White Space**: White space is your friend. It gives elements in your design room to breathe and helps guide the reader's eye.
 
 2. **Less is More**: Don’t clutter your design with unnecessary elements. Every design piece should have a purpose.
 

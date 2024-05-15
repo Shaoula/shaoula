@@ -1,0 +1,9 @@
+title: HealthHub Mobile App
+description: Development of the HealthHub mobile app, providing users with personalized health and fitness plans, activity tracking, and nutrition guidance. User-friendly interface with data sync capabilities.
+image:
+  url: /images/portfolio/healthhub.jpg
+  alt: HealthHub Mobile App
+  width: 1200
+  height: 800
+slug: healthhub
+order: 2

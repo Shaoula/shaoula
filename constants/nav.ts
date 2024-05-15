@@ -1,26 +1,26 @@
 export const navs = [
   {
-    name: 'Home',
+    name: 'nav.home',
     path: '/',
   },
   {
-    name: 'About',
+    name: 'nav.about',
     path: '/about',
   },
   {
-    name: 'Services',
+    name: 'nav.services',
     path: '/services',
   },
   {
-    name: 'Projects',
+    name: 'nav.projects',
     path: '/projects',
   },
   {
-    name: 'Blog',
+    name: 'nav.blog',
     path: '/blog',
   },
   {
-    name: 'Contact',
+    name: 'nav.contact',
     path: '/contact',
   },
 ]
@@ -29,17 +29,17 @@ export const socials = [
   {
     name: 'Facebook',
     icon: 'i-ph-facebook-logo-bold',
-    path: 'https://www.facebook.com/profile.php?id=100065281140375&mibextid=LQQJ4d',
+    path: 'https://www.facebook.com/profile.php?id=100065281140375',
   },
   {
     name: 'X (Twitter)',
     icon: 'i-ph-twitter-logo-bold',
-    path: 'https://twitter.com/shaoulagroup',
+    path: 'https://twitter.com/shaoulahq',
   },
   {
     name: 'Instagram',
     icon: 'i-ph-instagram-logo-bold',
-    path: 'https://www.instagram.com/shaoulagroup',
+    path: 'https://www.instagram.com/shaoulahq',
   },
   {
     name: 'LinkedIn',

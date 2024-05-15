@@ -1,0 +1,115 @@
+{
+  "menu": "Menu",
+  "skipToMain": "Saltar para o conteúdo principal",
+  "mainNavigation": "Navegação Principal",
+  "getQuote": "Obter um Orçamento",
+  "goToHomepage": "Ir para a Página Inicial",
+  "quickLinks": "Links Rápidos",
+  "followUs": "Siga-nos",
+  "newsletter": {
+    "title": "Boletim Informativo",
+    "email": "Endereço de Email",
+    "placeholder": "Insira o seu endereço de email",
+    "submit": "Subscrever",
+    "description": "Mantenha-se atualizado com as últimas notícias e atualizações da Shaoula.",
+    "consent": "Ao subscrever, concorda com a nossa {0} e dá o seu consentimento para receber atualizações da nossa empresa.",
+    "invalidEmail": "Por favor, insira um endereço de email válido.",
+    "success": "Obrigado por subscrever o nosso boletim informativo!",
+    "error": "Ocorreu um erro. Por favor, tente novamente mais tarde."
+  },
+  "privacyPolicy": "Política de Privacidade",
+  "allRightsReserved": "© {year} Shaoula. Todos os direitos reservados.",
+  "madeWithLove": "Feito com {0}",
+  "footerDescription": "Criando Excelência Digital",
+  "nav": {
+    "home": "Página Inicial",
+    "about": "Sobre",
+    "services": "Serviços",
+    "projects": "Projetos",
+    "blog": "Blog",
+    "contact": "Contacto"
+  },
+  "home": {
+    "seo": {
+      "title": "Criando Excelência Digital",
+      "description": "Entre no nosso mundo digital, onde a criatividade encontra a inovação. Descubra como damos vida às marcas com design, desenvolvimento e um toque de magia."
+    },
+    "hero": {
+      "title": "Inovar. Projetar. Inspirar.",
+      "subtitle": "Bem-vindo à Shaoula, onde a imaginação encontra a experiência. Criamos soluções web que fazem a sua marca brilhar online.",
+      "actions": {
+        "explore": "Explore os nossos serviços",
+        "contact": "Entre em contato"
+      }
+    },
+    "services": {
+      "title": "Serviços que Impulsionam o Sucesso Digital",
+      "subtitle": "Desbloqueie um mundo de possibilidades com a nossa gama abrangente de serviços. Desde o design visionário ao desenvolvimento de ponta, as nossas soluções são adaptadas para elevar a presença online da sua marca.",
+      "button": "Saiba mais sobre os nossos serviços"
+    },
+    "portfolio": {
+      "title": "Explore a nossa vitrine digital",
+      "subtitle": "Mergulhe numa coleção selecionada das nossas melhores criações. O nosso portfólio reflete a arte e a inovação que definem o nosso trabalho. Testemunhe a transformação de ideias em realidades digitais deslumbrantes.",
+      "button": "Explore os nossos projetos"
+    },
+    "testimonials": {
+      "title": "O nosso sucesso através das suas palavras"
+    },
+    "team": {
+      "title": "Criando Sonhos Digitais: A nossa história na Shaoula",
+      "subtitle": "Na Shaoula, somos tecelões de sonhos digitais. Misturamos criatividade com experiência para criar experiências online imersivas. A nossa missão é simples: transformar as suas visões em realidades digitais cativantes. Com designs perfeitos e desenvolvimento de ponta, elevamos as marcas, amplificamos o impacto e criamos conexões duradouras. Bem-vindo à Shaoula, onde a inovação encontra a empatia, e o seu sucesso é a nossa jornada.",
+      "button": "Conheça a nossa equipa"
+    },
+    "blog": {
+      "title": "Explore as nossas ideias digitais",
+      "subtitle": "Mergulhe no mundo da inovação digital, tendências de design e estratégias de negócios com o nosso blog. Acreditamos em partilhar conhecimentos e capacitá-lo com informações valiosas. Quer esteja à procura de inspiração para o design web, dicas de SEO ou tendências da indústria, o nosso blog é o seu recurso de referência. Junte-se a nós numa jornada de descoberta, aprendizagem e inspiração.",
+      "button": "Leia o nosso blog"
+    }
+  },
+  "services": {
+    "title": "Explore as nossas ofertas",
+    "description": "Explore o nosso kit de ferramentas digitais que inclui design web, branding, marketing e muito mais. Vamos moldar juntos a sua história de sucesso digital.",
+    "hero": {
+      "eyebrow": "Os nossos serviços",
+      "title": "Criando Brilho Digital: O seu sucesso, a nossa experiência",
+      "subtitle": "Bem-vindo à gama abrangente de serviços da Shaoula. Explore os serviços que oferecemos para ver como podemos ajudá-lo a ter sucesso no panorama digital."
+    },
+    "cta": {
+      "title": "Obtenha um orçamento gratuito",
+      "description": "Pronto para transformar a sua presença digital? Entre em contato connosco hoje mesmo para discutir o seu projeto e embarquemos juntos nesta jornada de criatividade, tecnologia e inovação.",
+      "cta": "Obter um Orçamento"
+    }
+  },
+  "about": {
+    "seo": {
+      "title": "Descubra a nossa história",
+      "description": "Descubra a jornada da Shaoula - uma equipa de sonhadores, designers e estrategas. Saiba como estamos a remodelar as experiências digitais."
+    },
+    "hero": {
+      "eyebrow": "Sobre nós",
+      "title": "Criando Sonhos Digitais na Shaoula",
+      "subtitle": "Na Shaoula, somos mais do que uma agência web. Somos os arquitetos dos sonhos digitais, dedicados a remodelar as experiências online e a capacitar as marcas a alcançar novas alturas.",
+      "actions": "Siga-nos em"
+    }
+  },
+  "projects": {
+    "seo": {
+      "title": "A nossa vitrine criativa",
+      "description": "Mergulhe no nosso universo criativo e testemunhe os projetos que nos definem. Cada trabalho é um testemunho do nosso compromisso com a excelência."
+    },
+    "hero": {
+      "eyebrow": "Os nossos projetos",
+      "title": "Onde a criatividade encontra a excelência.",
+      "subtitle": "Explore a nossa gama diversificada de empreendimentos de design, desenvolvimento e marketing, e descubra como a Shaoula transforma ideias em experiências digitais extraordinárias."
+    },
+    "achievements": {
+      "title": "Conquistas"
+    }
+  },
+  "blog": "Blogue",
+  "article": {
+    "toc": {
+      "title": "Índice"
+    }
+  }
+}

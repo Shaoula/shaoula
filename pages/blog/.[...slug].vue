@@ -83,7 +83,7 @@ useHead({
         v-if="toc.length" class="lg:flex(grow-0 shrink-0 basis-1/4) lg:(sticky top-20 h-fit max-w-1/4) space-y-1"
       >
         <div class="flex flex-col space-y-2">
-          <h2 class="text-lg font-bold text-gray-500">
+          <h2 class="text-lg text-gray-500 font-bold">
             Table of Contents
           </h2>
           <NuxtLink
@@ -106,10 +106,10 @@ useHead({
 
 <style lang="scss">
 .prose :where(img, video):not(:where(.not-prose, .not-prose *)) {
-    @apply rounded-lg aspect-ratio-21/9 object-cover object-center w-full;
+  @apply rounded-lg aspect-ratio-21/9 object-cover object-center w-full;
 }
 
 .prose :where(h2):not(:where(.not-prose, .not-prose *)) {
-    @apply scroll-mt-[4rem];
+  @apply scroll-mt-[4rem];
 }
 </style>

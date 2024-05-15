@@ -1,25 +1,10 @@
 <script setup lang="ts">
 const localePath = useLocalePath()
-const tabs = usePurpose()
-const types = useType()
-
-const fields = reactive({
-  purpose: 0,
-  location: '',
-  price: '',
-  area: '',
-  rooms: '',
-  bathrooms: '',
-  parking: '',
-  type: '',
-  status: '',
-  features: [],
-  sort: '',
-  page: 1,
-})
+// const tabs = usePurpose()
+// const types = useType()
 
 // const { search, results, loading } = useSearch()
-const handleSearch = (e: Event) => {
+function handleSearch(e: Event) {
   e.preventDefault()
   // TODO: search
   // console.log('search', fields)
@@ -89,7 +74,7 @@ const handleSearch = (e: Event) => {
     @apply hover:(bg-white/0.12 text-white)
     focus:(outline-none ring-2);
 
-    &[aria-checked="true"] {
+    &[aria-checked='true'] {
       @apply bg-white shadow
       text-blue-900 font-medium;
     }
@@ -111,7 +96,7 @@ const handleSearch = (e: Event) => {
   &__input {
     @apply border-none rounded-none
     focus:outline-none
-    focus:ring-0
+    focus:ring-0;
   }
 
   &__button {
@@ -119,13 +104,14 @@ const handleSearch = (e: Event) => {
     p-0
     border-none rounded-none
     focus:outline-none
-    focus:ring-0
+    focus:ring-0;
   }
 }
 </style>
 
 <style scoped lang="scss">
-.slide-enter-active, .slide-leave-active {
-  transition: all .3s ease;
+.slide-enter-active,
+.slide-leave-active {
+  transition: all 0.3s ease;
 }
 </style>

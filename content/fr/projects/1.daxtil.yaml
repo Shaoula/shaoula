@@ -1,0 +1,18 @@
+# Lang: fr
+
+title: Daxtil
+# description: "We developed an early-stage marketing strategy for the startup we are branding. Our innovative approach and strategic guidance are helping them establish a strong foundation in their industry, setting them on a path to success."
+description: 'Nous avons développé une stratégie de marketing au stade initial pour la startup que nous marquons. Notre approche innovante et notre orientation stratégique les aident à établir une base solide dans leur secteur, les mettant sur la voie du succès.'
+image:
+  url: /images/portfolio/daxtil.png
+  alt: Daxtil
+achievements:
+  # - "Strategic Branding"
+  - Branding stratégique
+  # - "Early-Stage Marketing"
+  - Marketing au stade initial
+categories:
+  # - "Branding"
+  - Marquage
+  # - "Marketing Strategy"
+  - Stratégie marketing

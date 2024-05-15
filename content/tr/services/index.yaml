@@ -1,0 +1,28 @@
+body:
+  - title: Yaklaşımımız
+    # image:
+    #   url: "/images/our-journey.jpg"
+    #   alt: "Our Journey"
+    # description: "Creativity and expertise are the pillars of our foundation. Beyond being a conventional web agency, we take pride in being digital architects. We weave strategies, designs, and development into seamless narratives that elevate brands."
+    description: 'Yaratıcılık ve uzmanlık temelimizin direkleridir. Geleneksel bir web ajansı olmanın ötesinde, dijital mimarlar olmaktan gurur duyuyoruz. Stratejileri, tasarımları ve geliştirmeleri markaları yükselten sorunsuz anlatılara dokuyoruz.'
+  - title: Hemen Başlayalım
+    # description: "Ready to Get Started? Ready to transform your digital presence? Contact us today to discuss your project, and let's embark on this journey of creativity, technology, and innovation together."
+    description: 'Dijital varlığınızı dönüştürmeye hazır mısınız? Projeleriniz hakkında konuşmak için bugün bizimle iletişime geçin ve birlikte yaratıcılık, teknoloji ve inovasyon yolculuğuna çıkalım.'
+    cta:
+      # label: "Get a Quote"
+      label: Teklif Al
+      href: /contact
+  - title: Portföyümüzü Keşfedin
+    # description: "Visit our portfolio to see how we've empowered businesses like yours with our digital solutions. Each project tells a unique story of success and innovation."
+    description: 'Dijital çözümlerimizle sizin gibi işletmeleri nasıl güçlendirdiğimizi görmek için portföyümüzü ziyaret edin. Her proje, başarı ve inovasyonun benzersiz bir hikayesini anlatır.'
+    cta:
+      # label: "Explore Our Portfolio"
+      label: Portföyümüzü Keşfedin
+      href: /projects
+  - title: Sorularınız mı Var?
+    # description: "We're here to help. If you have any questions or need further information about our services, please don't hesitate to reach out to our team."
+    description: 'Yardıma hazırız. Hizmetlerimizle ilgili herhangi bir sorunuz veya daha fazla bilgiye ihtiyacınız varsa, lütfen ekibimize ulaşmaktan çekinmeyin.'
+    cta:
+      # label: "Contact Us"
+      label: Bize Ulaşın
+      href: /contact

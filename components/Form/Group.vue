@@ -6,22 +6,21 @@
 
 <style module lang="scss">
 .Group {
-    @apply flex items-center;
+  @apply flex items-center;
 
-    & * {
-        @apply flex-shrink-0
+  & * {
+    @apply flex-shrink-0
         rounded-none;
 
-        &:first-child {
-            @apply rounded-l;
-        }
-
-        &:last-child {
-            @apply rounded-r;
-        }
+    &:first-child {
+      @apply rounded-l;
     }
 
-    /*  */
+    &:last-child {
+      @apply rounded-r;
+    }
+  }
 
+  /*  */
 }
 </style>

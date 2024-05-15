@@ -7,8 +7,7 @@ category: "Marketing"
 date: "2023-10-15"
 author: "Shaoula"
 image:
-    # url: "/images/blog/simplicity-in-design.jpg"
-    url: "https://images.pexels.com/photos/270637/pexels-photo-270637.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    url: "/images/blog/power-of-seo.jpg"
     alt: "The Power of SEO: Unlock Your Website's Full Potential"
 head:
     meta:
@@ -50,7 +49,7 @@ head:
           content: ["SEO", "Search Engine Optimization", "Visibility", "User Experience", "Shaoula"]
         - name: "article:tag"
           content: ["SEO", "Search Engine Optimization", "Visibility", "User Experience", "Shaoula"]
-        
+
         - name: "title"
           content: "The Power of SEO: Unlock Your Website's Full Potential"
         - name: "description"
@@ -71,7 +70,6 @@ head:
 navigation:
     title: "The Power of SEO: Unlock Your Website's Full Potential"
 ---
-
 
 # The Power of SEO: Unlock Your Website's Full Potential
 

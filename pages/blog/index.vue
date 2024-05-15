@@ -1,18 +1,23 @@
 <script setup lang="ts">
 import { appName } from '~/constants'
 
+const { t } = useI18n()
+
 // const articles = await queryContent('blog').find()
 
 defineOgImage({
   component: 'Hero',
-  eyebrow: `${appName} Blog`,
-  title: 'Explore Our Digital Playground',
-  subtitle: 'Dive into the world of digital innovation, design trends, and business strategies with our blog. Join us on a journey of discovery, learning, and inspiration.',
+  props: {
+    eyebrow: `${appName} Blog`,
+    title: 'Explore Our Digital Playground',
+    subtitle: 'Dive into the world of digital innovation, design trends, and business strategies with our blog. Join us on a journey of discovery, learning, and inspiration.',
+  },
 })
 
 useSeoMeta({
-  title: 'Insights and Inspiration',
-  description: 'Our blog is a treasure trove of insights, tips, and inspiration. Join us on a journey through the ever-evolving digital landscape.',
+  titleTemplate: `%s | ${appName} Blog`,
+  title: t('blog.seo.title'),
+  description: t('blog.seo.description'),
 })
 
 const email = ref('')
@@ -22,7 +27,7 @@ const [isLoading, toggleIsLoading] = useToggle(false)
 const { toast } = useToasts()
 
 function validateEmail(email: string) {
-  const re = /\S+@\S+\.\S+/
+  const re = /\S[^\s@]*@\S+\.\S+/
   return re.test(email)
 }
 
@@ -36,7 +41,7 @@ async function onSubscribe(e: Event) {
   if (!isEmailValid) {
     emailError.value = true
     toggleIsLoading(false)
-    toast('Please enter a valid email address.')
+    toast(t('newsletter.invalidEmail'))
     return
   }
 
@@ -47,12 +52,12 @@ async function onSubscribe(e: Event) {
   if (res.ok) {
     toggleIsLoading(false)
     email.value = ''
-    toast('Thank you for joining our newsletter!')
+    toast(t('newsletter.success'))
   }
   else {
     toggleIsLoading(false)
     console.error(res)
-    toast('An error occurred. Please try again later.')
+    toast(t('newsletter.error'))
   }
 }
 </script>
@@ -62,13 +67,13 @@ async function onSubscribe(e: Event) {
     <template #hero>
       <div :class="$style.Hero">
         <p :class="$style.Hero__eyebrow">
-          Blog
+          {{ $t('blog.hero.eyebrow') }}
         </p>
-        <h2 :class="$style.Hero__title">
-          Explore Our Digital Playground
-        </h2>
+        <h1 :class="$style.Hero__title">
+          {{ $t('blog.hero.title') }}
+        </h1>
         <h5 :class="$style.Hero__subtitle">
-          Dive into the world of digital innovation, design trends, and business strategies with our blog. Join us on a journey of discovery, learning, and inspiration.
+          {{ $t('blog.hero.subtitle') }}
         </h5>
         <form @submit.prevent="onSubscribe">
           <!-- <p class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -80,10 +85,10 @@ async function onSubscribe(e: Event) {
               :has-error="emailError"
               required
               type="email"
-              placeholder="Enter your email"
+              :placeholder="$t('newsletter.placeholder')"
             />
             <Button
-              label="Subscribe"
+              :label="$t('newsletter.submit')"
               :loading="isLoading"
               type="submit"
             />
@@ -94,7 +99,7 @@ async function onSubscribe(e: Event) {
     <div
       :class="$style.Blog"
     >
-      <ContentList v-slot="{ list: articles }" path="/blog">
+      <ContentList v-slot="{ list: articles }" :path="$route.path">
         <!-- <section v-for="article in list" :key="article._path">
           <pre>{{ article }}</pre>
           <h2>{{ article.title }}</h2>
@@ -167,27 +172,27 @@ async function onSubscribe(e: Event) {
 </template>
 
 <style lang="scss" module>
-.Hero{
-    @apply flex flex-col items-center justify-center gap-8
+.Hero {
+  @apply flex flex-col items-center justify-center gap-8
     h-full;
 
-    &__eyebrow {
-        @apply text-xl font-semibold text-neutral-500 text-center  tracking-wider uppercase
+  &__eyebrow {
+    @apply text-xl font-semibold text-neutral-500 text-center  tracking-wider uppercase
 
         dark:(text-neutral-500);
-    }
+  }
 
-    &__title {
-        @apply text-6xl font-bold text-neutral-900 text-center leading-normal
+  &__title {
+    @apply text-6xl font-bold text-neutral-900 text-center leading-normal
 
         dark:(text-neutral-100);
-    }
+  }
 
-    &__subtitle {
-        @apply text-2xl font-medium text-neutral-600 text-center
+  &__subtitle {
+    @apply max-w-4xl text-2xl font-medium text-neutral-600 text-center text-balance
 
         dark:(text-neutral-400);
-    }
+  }
 }
 
 .Blog {
@@ -235,7 +240,7 @@ async function onSubscribe(e: Event) {
 
       img {
         @apply absolute inset-0 object-cover
-        w-full h-full
+        w-full h-full;
       }
     }
   }

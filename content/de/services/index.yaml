@@ -1,0 +1,28 @@
+body:
+  - title: Unser Ansatz
+    # image:
+    #   url: "/images/our-journey.jpg"
+    #   alt: "Our Journey"
+    # description: "Creativity and expertise are the pillars of our foundation. Beyond being a conventional web agency, we take pride in being digital architects. We weave strategies, designs, and development into seamless narratives that elevate brands."
+    description: 'Kreativität und Fachwissen sind die Säulen unserer Stiftung. Wir sind stolz darauf, mehr als eine herkömmliche Webagentur zu sein. Wir weben Strategien, Designs und Entwicklung zu nahtlosen Erzählungen, die Marken aufwerten.'
+  - title: 'Bereit, loszulegen?'
+    # description: "Ready to Get Started? Ready to transform your digital presence? Contact us today to discuss your project, and let's embark on this journey of creativity, technology, and innovation together."
+    description: 'Bereit, loszulegen? Bereit, Ihre digitale Präsenz zu verwandeln? Kontaktieren Sie uns noch heute, um Ihr Projekt zu besprechen, und lassen Sie uns gemeinsam diese Reise der Kreativität, Technologie und Innovation antreten.'
+    cta:
+      # label: "Get a Quote"
+      label: Erhalten Sie ein Angebot
+      href: /contact
+  - title: Erkunden Sie unser Portfolio
+    # description: "Visit our portfolio to see how we've empowered businesses like yours with our digital solutions. Each project tells a unique story of success and innovation."
+    description: 'Besuchen Sie unser Portfolio, um zu sehen, wie wir Unternehmen wie Ihres mit unseren digitalen Lösungen unterstützt haben. Jedes Projekt erzählt eine einzigartige Geschichte von Erfolg und Innovation.'
+    cta:
+      # label: "Explore Our Portfolio"
+      label: Erkunden Sie unser Portfolio
+      href: /projects
+  - title: Haben Sie Fragen?
+    # description: "We're here to help. If you have any questions or need further information about our services, please don't hesitate to reach out to our team."
+    description: 'Wir sind hier, um zu helfen. Wenn Sie Fragen haben oder weitere Informationen zu unseren Dienstleistungen benötigen, zögern Sie bitte nicht, sich an unser Team zu wenden.'
+    cta:
+      # label: "Contact Us"
+      label: Kontaktiere uns
+      href: /contact

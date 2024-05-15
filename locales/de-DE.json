@@ -1,0 +1,161 @@
+{
+  "menu": "Menü",
+  "skipToMain": "Zum Hauptinhalt springen",
+  "mainNavigation": "Hauptnavigation",
+  "getQuote": "Angebot anfordern",
+  "goToHomepage": "Zur Startseite",
+  "quickLinks": "Schnellzugriff",
+  "followUs": "Folge uns",
+  "newsletter": {
+    "title": "Newsletter",
+    "email": "E-Mail-Adresse",
+    "placeholder": "Geben Sie Ihre E-Mail-Adresse ein",
+    "submit": "Abonnieren",
+    "description": "Bleiben Sie auf dem Laufenden über die neuesten Nachrichten und Updates von Shaoula.",
+    "consent": "Durch die Anmeldung stimmen Sie unseren {0} zu und willigen ein, Updates von unserem Unternehmen zu erhalten.",
+    "invalidEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+    "success": "Vielen Dank, dass Sie unseren Newsletter abonniert haben!",
+    "error": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es später erneut."
+  },
+  "privacyPolicy": "Datenschutz-Bestimmungen",
+  "allRightsReserved": "© {year} Shaoula. Alle Rechte vorbehalten.",
+  "madeWithLove": "Hergestellt mit {0}",
+  "footerDescription": "Digitale Exzellenz schaffen",
+  "nav": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "services": "Dienstleistungen",
+    "projects": "Projekte",
+    "blog": "Blog",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "seo": {
+      "title": "Digitale Exzellenz schaffen",
+      "description": "Treten Sie ein in unsere digitale Welt, wo Kreativität auf Innovation trifft. Entdecken Sie, wie wir Marken mit Design, Entwicklung und einem Hauch von Magie zum Leben erwecken."
+    },
+    "hero": {
+      "title": "Innovieren. Designen. Inspirieren.",
+      "subtitle": "Willkommen bei Shaoula, wo Vorstellungskraft auf Fachwissen trifft. Wir gestalten Web-Lösungen, die Ihre Marke online zum Strahlen bringen.",
+      "actions": {
+        "explore": "Entdecken Sie unsere Dienstleistungen",
+        "contact": "Kontaktieren Sie uns"
+      }
+    },
+    "services": {
+      "title": "Dienstleistungen, die digitale Erfolge entfachen",
+      "subtitle": "Entdecken Sie mit unserem umfassenden Dienstleistungsangebot eine Welt voller Möglichkeiten. Von visionärem Design bis hin zu modernster Entwicklung sind unsere Lösungen darauf ausgerichtet, die Online-Präsenz Ihrer Marke zu verbessern.",
+      "button": "Erfahren Sie mehr über unsere Dienstleistungen"
+    },
+    "portfolio": {
+      "title": "Entdecken Sie unsere digitale Ausstellung",
+      "subtitle": "Tauchen Sie ein in eine kuratierte Sammlung unserer besten Kreationen. Unser Portfolio spiegelt die Kunstfertigkeit und Innovation wider, die unsere Arbeit ausmachen. Erleben Sie die Verwandlung von Ideen in atemberaubende digitale Realitäten.",
+      "button": "Entdecken Sie unsere Projekte"
+    },
+    "testimonials": {
+      "title": "Unser Erfolg durch Ihre Worte"
+    },
+    "team": {
+      "title": "Digitale Träume schaffen: Unsere Geschichte bei Shaoula",
+      "subtitle": "Bei Shaoula sind wir digitale Traumweber. Wir verbinden Kreativität mit Fachwissen, um immersive Online-Erlebnisse zu gestalten. Unsere Mission ist einfach: Ihre Visionen in fesselnde digitale Realitäten zu verwandeln. Mit pixelgenauen Designs und modernster Entwicklung heben wir Marken auf ein neues Niveau, verstärken ihre Wirkung und schaffen dauerhafte Verbindungen. Willkommen bei Shaoula, wo Innovation auf Empathie trifft und Ihr Erfolg unsere Reise ist.",
+      "button": "Lernen Sie unser Team kennen"
+    },
+    "blog": {
+      "title": "Entdecken Sie unsere digitalen Einblicke",
+      "subtitle": "Tauchen Sie ein in die Welt der digitalen Innovation, der Designtrends und der Geschäftsstrategien mit unserem Blog. Wir glauben an den Austausch von Wissen und daran, Sie mit wertvollen Einblicken zu befähigen. Ob Sie nach Webdesign-Inspirationen, SEO-Tipps oder Branchentrends suchen, unser Blog ist Ihre Anlaufstelle. Begleiten Sie uns auf eine Reise der Entdeckung, des Lernens und der Inspiration.",
+      "button": "Lesen Sie unseren Blog"
+    }
+  },
+  "services": {
+    "title": "Entdecken Sie unser Angebot",
+    "description": "Entdecken Sie unser digitales Toolkit, das Webdesign, Branding, Marketing und mehr umfasst. Lassen Sie uns gemeinsam Ihre digitale Erfolgsgeschichte gestalten.",
+    "hero": {
+      "eyebrow": "Unsere Dienstleistungen",
+      "title": "Digitale Brillanz schaffen: Ihr Erfolg, unser Fachwissen",
+      "subtitle": "Willkommen bei Shaoula's umfassendem Dienstleistungsangebot. Entdecken Sie die von uns angebotenen Dienstleistungen, um zu sehen, wie wir Ihnen im digitalen Umfeld zum Erfolg verhelfen können."
+    },
+    "cta": {
+      "title": "Erhalten Sie ein kostenloses Angebot",
+      "description": "Sind Sie bereit, Ihre digitale Präsenz zu verwandeln? Kontaktieren Sie uns noch heute, um Ihr Projekt zu besprechen, und lassen Sie uns gemeinsam auf diese Reise der Kreativität, Technologie und Innovation gehen.",
+      "cta": "Angebot anfordern"
+    }
+  },
+  "about": {
+    "seo": {
+      "title": "Entdecken Sie unsere Geschichte",
+      "description": "Entdecken Sie die Reise von Shaoula - einem Team von Träumern, Designern und Strategen. Erfahren Sie, wie wir digitale Erlebnisse neu gestalten."
+    },
+    "hero": {
+      "eyebrow": "Über uns",
+      "title": "Digitale Träume bei Shaoula schaffen",
+      "subtitle": "Bei Shaoula sind wir mehr als nur eine Webagentur. Wir sind die Architekten digitaler Träume, die sich der Neugestaltung von Online-Erlebnissen verschrieben haben und Marken befähigen, neue Höhen zu erreichen.",
+      "actions": "Folge uns auf"
+    }
+  },
+  "projects": {
+    "seo": {
+      "title": "Unsere kreative Ausstellung",
+      "description": "Tauchen Sie ein in unser kreatives Universum und erleben Sie die Projekte, die uns ausmachen. Jede Arbeit ist ein Zeugnis unseres Engagements für Exzellenz."
+    },
+    "hero": {
+      "eyebrow": "Unsere Projekte",
+      "title": "Wo Kreativität auf Exzellenz trifft.",
+      "subtitle": "Entdecken Sie unsere vielfältigen Design-, Entwicklungs- und Marketingprojekte und erfahren Sie, wie Shaoula Ideen in außergewöhnliche digitale Erlebnisse verwandelt."
+    },
+    "achievements": {
+      "title": "Errungenschaften"
+    }
+  },
+  "blog": {
+    "seo": {
+      "title": "Unsere digitalen Einblicke",
+      "description": "Entdecken Sie die neuesten Nachrichten, Tipps und Trends aus der Welt des Webdesigns, der Entwicklung und des Marketings. Unser Blog ist Ihre Anlaufstelle für wertvolle Einblicke."
+    },
+    "hero": {
+      "eyebrow": "Unser Blog",
+      "title": "Digitale Einblicke, die inspirieren",
+      "subtitle": "Willkommen in unserem Blog, wo wir über die neuesten Trends, Tipps und Strategien im Bereich Webdesign, Entwicklung und Marketing sprechen. Lassen Sie sich von unseren digitalen Einblicken inspirieren und befähigen."
+    }
+  },
+  "article": {
+    "toc": {
+      "title": "Inhaltsverzeichnis"
+    }
+  },
+  "contact": {
+    "seo": {
+      "title": "Kontaktieren Sie uns",
+      "description": "Bereit, Ihre digitale Reise zu beginnen? Kontaktieren Sie Shaoula noch heute, um Ihr Projekt zu besprechen und digitale Exzellenz zu schaffen."
+    },
+    "hero": {
+      "eyebrow": "Kontaktieren Sie uns",
+      "title": "Bereit, Ihre Marke zu neuen Höhen zu führen?",
+      "subtitle": "Lassen Sie uns über Ihr nächstes Projekt sprechen und gemeinsam digitale Exzellenz schaffen. Kontaktieren Sie uns noch heute, um den ersten Schritt zu machen."
+    },
+    "form": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Geben Sie Ihren Namen ein"
+      },
+      "email": {
+        "label": "E-Mail",
+        "placeholder": "Geben Sie Ihre E-Mail-Adresse ein"
+      },
+      "phone": {
+        "label": "Telefon",
+        "placeholder": "Geben Sie Ihre Telefonnummer ein"
+      },
+      "message": {
+        "label": "Nachricht",
+        "placeholder": "Geben Sie Ihre Nachricht ein"
+
+      },
+      "submit": "Senden",
+      "success": "Vielen Dank für Ihre Nachricht! Wir werden uns in Kürze bei Ihnen melden.",
+      "error": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es später erneut."
+    },
+    "partners": {
+      "title": "Unsere Partner"
+    }
+  }
+}

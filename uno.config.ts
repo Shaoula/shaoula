@@ -34,10 +34,6 @@ export default defineConfig({
     presetAttributify(),
     presetIcons({
       scale: 1.0,
-      collections: {
-        ph: () => import('@iconify-json/ph/icons.json').then(i => i.default),
-        logos: () => import('@iconify-json/logos/icons.json').then(i => i.default),
-      },
     }),
     presetTypography(),
     presetWebFonts({

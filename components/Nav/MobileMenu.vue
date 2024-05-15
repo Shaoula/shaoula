@@ -80,72 +80,73 @@ function openModal() {
 
 <style lang="scss" module>
 .Menu {
+  &__button {
+    @apply flex-col items-center justify-center;
 
-    &__button {
-        @apply flex-col items-center justify-center;
+    &__icon {
+      @apply flex flex-col items-center justify-center gap-2;
 
-        &__icon {
-            @apply flex flex-col items-center justify-center gap-2;
-
-            &::before, &::after {
-                content: '';
-                @apply w-4 h-.5 bg-neutral-900
+      &::before,
+      &::after {
+        content: '';
+        @apply w-4 h-.5 bg-neutral-900
                 rounded
                 transition-transform duration-300 ease-in-out
 
                 dark:(bg-neutral-100);
-            }
+      }
 
-            &[data-expanded="true"] {
-                &::before {
-                    @apply transform rotate-45 translate-y-1.5;
-                }
-
-                &::after {
-                    @apply transform -rotate-45 -translate-y-1;
-                }
-            }
+      &[data-expanded='true'] {
+        &::before {
+          @apply transform rotate-45 translate-y-1.5;
         }
+
+        &::after {
+          @apply transform -rotate-45 -translate-y-1;
+        }
+      }
     }
+  }
 
-    &__dialog {
-        @apply relative z-10;
-    }
+  &__dialog {
+    @apply relative z-10;
+  }
 
-    &__overlay {
-        @apply fixed inset-0 bg-black bg-opacity-25;
-    }
+  &__overlay {
+    @apply fixed inset-0 bg-black bg-opacity-25;
+  }
 
-    &__container {
-        @apply fixed inset-0 overflow-y-auto;
-    }
+  &__container {
+    @apply fixed inset-0 overflow-y-auto;
+  }
 
-    &__content {
-        @apply min-h-full flex pt-16 text-center;
-    }
+  &__content {
+    @apply min-h-full flex pt-16 text-center;
+  }
 
-    &__panel {
-        @apply w-full flex flex-col transform justify-between overflow-hidden rounded bg-white p-6 text-left align-middle shadow-xl transition-all;
-    }
+  &__panel {
+    @apply w-full flex flex-col transform justify-between overflow-hidden rounded bg-white p-6 text-left align-middle shadow-xl transition-all;
+  }
 
-    &__nav {
-        @apply flex flex-col gap-y-4;
+  &__nav {
+    @apply flex flex-col gap-y-4;
 
-        &__link {
-            @apply text-gray-600 hover:text-gray-900
+    &__link {
+      @apply text-gray-600 hover:text-gray-900
 
             dark:(text-gray-400 hover:text-gray-200);
 
-            &.active, &[aria-current="page"] {
-                @apply text-gray-900 font-medium
+      &.active,
+      &[aria-current='page'] {
+        @apply text-gray-900 font-medium
 
                 dark:(text-gray-100);
-            }
-        }
+      }
     }
+  }
 
-    &__socials {
-        @apply flex items-center justify-evenly gap-4 mt-8;
-    }
+  &__socials {
+    @apply flex items-center justify-evenly gap-4 mt-8;
+  }
 }
 </style>
