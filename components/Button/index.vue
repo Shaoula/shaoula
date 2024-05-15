@@ -117,7 +117,7 @@ const linkProps = computed(() => (props.href ? { to: props.href, activeClass: 'a
 
 <style module lang="scss">
 .Button {
-  @apply flex items-center gap-2 px-3 cursor-pointer rounded-sm transition-all duration-200;
+  @apply flex items-center gap-2 px-3 cursor-pointer rounded-sm transition-all duration-200 shrink-0;
 
   &:focus {
     @apply ring-2 ring-blue outline-none ring-offset;
