@@ -18,6 +18,8 @@ useSeoMeta({
   titleTemplate: `%s | ${appName} Blog`,
 })
 
+useContentHead(data.value!)
+
 const toc = data.value?.body?.toc?.links ?? []
 </script>
 
