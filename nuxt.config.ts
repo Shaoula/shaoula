@@ -73,6 +73,19 @@ export default defineNuxtConfig({
     },
   },
 
+  content: {
+    ignores: [
+      '/de/',
+      '/fr/',
+      '/it/',
+      '/ru/',
+      '/tr/',
+      '/es/',
+      '/pt/',
+      '/en/',
+    ]
+  },
+
   'app': {
     head: {
       viewport: 'width=device-width,initial-scale=1',
