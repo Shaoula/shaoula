@@ -73,7 +73,7 @@ export default defineNuxtConfig({
     },
   },
 
-  content: {
+  'content': {
     ignores: [
       '/de/',
       '/fr/',
@@ -83,7 +83,7 @@ export default defineNuxtConfig({
       '/es/',
       '/pt/',
       '/en/',
-    ]
+    ],
   },
 
   'app': {
