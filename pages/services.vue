@@ -1,12 +1,8 @@
 <script setup lang="ts">
-import { appUrl } from '~/constants';
-
 const route = useRoute()
 
 const { t } = useI18n()
 const localePath = useLocalePath()
-
-
 
 useSeoMeta({
   title: t('services.title'),
@@ -15,13 +11,13 @@ useSeoMeta({
   ogTitle: t('services.title'),
   ogType: 'website',
 
-  ogImage: '/__og-image__/image' + route.fullPath + '/og.png',
+  ogImage: `/__og-image__/image${route.fullPath}/og.png`,
   ogImageAlt: t('services.title'),
 
   // Twitter Card
   twitterTitle: t('services.title'),
   twitterDescription: t('services.description'),
-  twitterImage: '/__og-image__/image' + route.fullPath + '/og.png',
+  twitterImage: `/__og-image__/image${route.fullPath}/og.png`,
   twitterImageAlt: t('services.title'),
 })
 
@@ -66,12 +62,16 @@ const sections = data.value?.body as unknown as { title: string, description: st
     </template>
 
     <div :class="$style.Services">
-      <Card v-for="service in services" :key="service.slug" :class="$style.Services__card" v-bind="service"
-        :clamp="false" />
-      <Card :title="$t('services.cta.title')" :description="$t('services.cta.description')" :action="{
-        label: $t('services.cta.cta'),
-        href: localePath('/contact'),
-      }" :href="localePath('/contact')" class="col-span-full" />
+      <Card
+        v-for="service in services" :key="service.slug" :class="$style.Services__card" v-bind="service"
+        :clamp="false"
+      />
+      <Card
+        :title="$t('services.cta.title')" :description="$t('services.cta.description')" :action="{
+          label: $t('services.cta.cta'),
+          href: localePath('/contact'),
+        }" :href="localePath('/contact')" class="col-span-full"
+      />
     </div>
 
     <section v-for="(section, idx) in sections" :key="idx" :class="$style.Section">

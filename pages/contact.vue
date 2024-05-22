@@ -26,13 +26,13 @@ useSeoMeta({
   // Open Graph
   ogTitle: t('contact.hero.title'),
   ogType: 'website',
-  ogImage: '/__og-image__/image' + route.fullPath + '/og.png',
+  ogImage: `/__og-image__/image${route.fullPath}/og.png`,
   ogImageAlt: t('contact.hero.title'),
 
   // Twitter Card
   twitterTitle: t('contact.hero.title'),
   twitterDescription: t('contact.hero.subtitle'),
-  twitterImage: '/__og-image__/image' + route.fullPath + '/og.png',
+  twitterImage: `/__og-image__/image${route.fullPath}/og.png`,
   twitterImageAlt: t('contact.hero.title'),
 })
 

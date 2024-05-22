@@ -138,7 +138,7 @@ export default defineNuxtConfig({
     twitter: '@shaoulahq',
   },
 
-  seo: {
+  'seo': {
     automaticDefaults: true,
     enabled: true,
     redirectToCanonicalSiteUrl: true,

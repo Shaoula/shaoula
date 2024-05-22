@@ -14,7 +14,7 @@ defineOgImage({
     eyebrow: t('about.hero.eyebrow'),
     title: t('about.hero.title'),
     subtitle: t('about.hero.subtitle'),
-  }
+  },
 })
 
 useSeoMeta({
@@ -24,13 +24,13 @@ useSeoMeta({
   // Open Graph
   ogTitle: t('about.seo.title'),
   ogType: 'website',
-  ogImage: '/__og-image__/image' + route.fullPath + '/og.png',
+  ogImage: `/__og-image__/image${route.fullPath}/og.png`,
   ogImageAlt: t('about.seo.title'),
 
   // Twitter Card
   twitterTitle: t('about.seo.title'),
   twitterDescription: t('about.seo.description'),
-  twitterImage: '/__og-image__/image' + route.fullPath + '/og.png',
+  twitterImage: `/__og-image__/image${route.fullPath}/og.png`,
   twitterImageAlt: t('about.seo.title'),
 })
 

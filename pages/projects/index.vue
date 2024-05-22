@@ -11,13 +11,13 @@ useSeoMeta({
   // Open Graph
   ogTitle: t('projects.seo.title'),
   ogType: 'website',
-  ogImage: '/__og-image__/image' + route.fullPath + '/og.png',
+  ogImage: `/__og-image__/image${route.fullPath}/og.png`,
   ogImageAlt: t('projects.seo.title'),
 
   // Twitter Card
   twitterTitle: t('projects.seo.title'),
   twitterDescription: t('projects.seo.description'),
-  twitterImage: '/__og-image__/image' + route.fullPath + '/og.png',
+  twitterImage: `/__og-image__/image${route.fullPath}/og.png`,
   twitterImageAlt: t('projects.seo.title'),
 })
 
@@ -27,7 +27,7 @@ defineOgImage({
     eyebrow: t('projects.hero.eyebrow'),
     title: t('projects.hero.title'),
     subtitle: t('projects.hero.subtitle'),
-  }
+  },
 })
 </script>
 
@@ -48,8 +48,10 @@ defineOgImage({
       </div>
     </template>
 
-    <ContentList v-slot="{ list: sections }" :path="$route.path"
-      :only="['title', 'image', 'description', 'slug', 'achievements']">
+    <ContentList
+      v-slot="{ list: sections }" :path="$route.path"
+      :only="['title', 'image', 'description', 'slug', 'achievements']"
+    >
       <template v-for="(section, index) in sections" :key="section.slug">
         <Divider v-if="index !== 0" class="text-neutral-2 dark:text-neutral-8" />
 
@@ -59,8 +61,10 @@ defineOgImage({
           </h3>
           <div :class="$style.Section__content">
             <div :class="$style.Section__image">
-              <NuxtImg :src="section.image.url" :alt="section.image.alt" :class="$style.Section__image" format="webp"
-                fit="cover" loading="lazy" placeholder quality="100" width="natural" height="natural" />
+              <NuxtImg
+                :src="section.image.url" :alt="section.image.alt" :class="$style.Section__image" format="webp"
+                fit="cover" loading="lazy" placeholder quality="100" width="natural" height="natural"
+              />
             </div>
             <div :class="$style.Section__description">
               <p>{{ section.description }}</p>
@@ -69,8 +73,10 @@ defineOgImage({
                   {{ $t('projects.achievements.title') }}
                 </h4>
                 <ul :class="$style.Section__description__achievements__list">
-                  <li v-for="(achievement, idx) in section.achievements" :key="idx"
-                    :class="$style.Section__description__achievements__list__item">
+                  <li
+                    v-for="(achievement, idx) in section.achievements" :key="idx"
+                    :class="$style.Section__description__achievements__list__item"
+                  >
                     {{ achievement }}
                   </li>
                 </ul>
