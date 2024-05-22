@@ -4,18 +4,21 @@ const route = useRoute()
 const { t } = useI18n()
 const localePath = useLocalePath()
 
-// defineOgImage({
-//   component: 'Hero',
-//   eyebrow: 'Our Services',
-//   title: 'Crafting Digital Brilliance: Your Success, Our Expertise',
-//   subtitle: 'Welcome to Shaoula\'s comprehensive range of services. Explore the services we offer to see how we can help you succeed in the digital landscape.',
-// })
+defineOgImage({
+  component: 'Hero',
+  props: {
+    eyebrow: t('services.hero.eyebrow'),
+    title: t('services.hero.title'),
+    subtitle: t('services.hero.subtitle'),
+  }
+})
 
 useSeoMeta({
   // title: 'Explore Our Offerings',
   title: t('services.title'),
   // description: 'Explore our digital toolkit that includes web design, branding, marketing, and more. Let\'s shape your digital success story together.',
   description: t('services.description'),
+  ogType: 'website'
 })
 
 const services = await queryContent(`${route.path}/`)
@@ -39,12 +42,12 @@ const sections = data.value?.body as unknown as { title: string, description: st
         <p :class="$style.Hero__eyebrow">
           {{ t('services.hero.eyebrow') }}
         </p>
-        <h2 :class="$style.Hero__title">
+        <h1 :class="$style.Hero__title">
           {{ t('services.hero.title') }}
-        </h2>
-        <h5 :class="$style.Hero__subtitle">
+        </h1>
+        <h2 :class="$style.Hero__subtitle">
           {{ t('services.hero.subtitle') }}
-        </h5>
+        </h2>
       </div>
     </template>
 

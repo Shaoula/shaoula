@@ -104,7 +104,7 @@ const toc = data.value?.body?.toc?.links ?? []
     @apply flex flex-col gap-2;
 
     &__title {
-      @apply text-lg font-bold text-neutral-500;
+      @apply text-lg font-bold text-neutral-500 dark:text-neutral-400/75;
     }
 
     &__link {
@@ -114,8 +114,8 @@ const toc = data.value?.body?.toc?.links ?? []
 
             hover:(text-neutral-600 underline)
 
-            dark:text-neutral-600
-            dark:hover:text-neutral-500;
+            dark:text-neutral-400
+            dark:hover:text-neutral-300;
     }
   }
 }

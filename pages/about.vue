@@ -49,9 +49,9 @@ const sections = data.value?.body as unknown as { title: string, description: st
         <h1 :class="$style.Hero__title">
           {{ $t('about.hero.title') }}
         </h1>
-        <h5 :class="$style.Hero__subtitle">
+        <h2 :class="$style.Hero__subtitle">
           {{ $t('about.hero.subtitle') }}
-        </h5>
+        </h2>
         <div :class="$style.Hero__actions">
           <p>{{ $t('about.hero.actions') }}</p>
           <Button

@@ -168,7 +168,8 @@ async function onSubscribe(e: Event) {
             />
             <Button :label="t('newsletter.submit')" :loading="isLoading" type="submit" @click="onSubscribe" />
           </div>
-          <I18nT tag="small" keypath="newsletter.consent" class="text-xs text-neutral-5" scope="global">
+          <I18nT tag="small" keypath="newsletter.consent" class="text-xs text-neutral-500 dark:(text-neutral-400)" 
+          scope="global">
             <NuxtLink to="#" class="underline">
               {{ t('privacyPolicy') }}
             </NuxtLink>

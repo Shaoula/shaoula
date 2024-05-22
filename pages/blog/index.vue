@@ -72,9 +72,9 @@ async function onSubscribe(e: Event) {
         <h1 :class="$style.Hero__title">
           {{ $t('blog.hero.title') }}
         </h1>
-        <h5 :class="$style.Hero__subtitle">
+        <h2 :class="$style.Hero__subtitle">
           {{ $t('blog.hero.subtitle') }}
-        </h5>
+        </h2>
         <form @submit.prevent="onSubscribe">
           <!-- <p class="text-sm text-neutral-500 dark:text-neutral-400">
             Suscribe to our newsletter

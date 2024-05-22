@@ -47,9 +47,9 @@ const nuxtLinkComponent = resolveComponent('NuxtLink')
           :rel="rel"
           :class="$style.Card__content__header"
         >
-          <h5 :class="[$style.Card__content__title, !clamp && $style['Card__content__title--no-clamp']]">
+          <h4 :class="[$style.Card__content__title, !clamp && $style['Card__content__title--no-clamp']]">
             {{ title }}
-          </h5>
+          </h4>
         </component>
         <p :class="[$style.Card__content__description, !clamp && $style['Card__content__description--no-clamp']]">
           {{ description }}

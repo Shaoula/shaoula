@@ -147,14 +147,14 @@ async function submitForm() {
           <!-- Contact Us -->
           {{ t('contact.hero.eyebrow') }}
         </p>
-        <h2 :class="$style.Hero__title">
+        <h1 :class="$style.Hero__title">
           <!-- Let's Connect and Create Digital Magic Together -->
           {{ t('contact.hero.title') }}
-        </h2>
-        <h5 :class="$style.Hero__subtitle">
+        </h1>
+        <h2 :class="$style.Hero__subtitle">
           <!-- At Shaoula, we're here to listen, collaborate, and turn your digital dreams into reality. Get in touch with us to start your next project or discuss how we can help you succeed in the digital realm. -->
           {{ t('contact.hero.subtitle') }}
-        </h5>
+        </h2>
       </div>
     </template>
 
@@ -235,9 +235,9 @@ async function submitForm() {
               />
             </div>
             <div :class="$style.Testimonial__card__header__info">
-              <h5 :class="$style.Testimonial__card__header__info__name">
+              <h4 :class="$style.Testimonial__card__header__info__name">
                 {{ testimonial.name }}
-              </h5>
+              </h4>
               <p :class="$style.Testimonial__card__header__info__title">
                 {{ testimonial.title }}
               </p>
