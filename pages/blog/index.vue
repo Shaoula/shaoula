@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { appName } from '~/constants'
 
+const route = useRoute()
+
 const { t } = useI18n()
 
 // const articles = await queryContent('blog').find()
@@ -18,6 +20,18 @@ useSeoMeta({
   titleTemplate: `%s | ${appName} Blog`,
   title: t('blog.seo.title'),
   description: t('blog.seo.description'),
+
+  // Open Graph
+  ogTitle: t('blog.seo.title'),
+  ogType: 'website',
+  ogImage: '/__og-image__/image' + route.fullPath + '/og.png',
+  ogImageAlt: t('blog.seo.title'),
+
+  // Twitter Card
+  twitterTitle: t('blog.seo.title'),
+  twitterDescription: t('blog.seo.description'),
+  twitterImage: '/__og-image__/image' + route.fullPath + '/og.png',
+  twitterImageAlt: t('blog.seo.title'),
 })
 
 const email = ref('')

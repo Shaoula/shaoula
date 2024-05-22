@@ -1,5 +1,5 @@
 import { pwa } from './config/pwa'
-import { appDescription } from './constants/index'
+import { appDescription, appName, appUrl } from './constants/index'
 
 export default defineNuxtConfig({
   // extends: ['nuxt-umami'],
@@ -129,11 +129,19 @@ export default defineNuxtConfig({
   },
 
   'site': {
-    name: 'Shaoula',
+    name: appName,
+    url: appUrl,
+    description: appDescription,
     identity: {
       type: 'Organization',
     },
     twitter: '@shaoulahq',
+  },
+
+  seo: {
+    automaticDefaults: true,
+    enabled: true,
+    redirectToCanonicalSiteUrl: true,
   },
 
   'sitemap': {

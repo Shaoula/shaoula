@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { breakpointsTailwind } from '@vueuse/core'
 
+const route = useRoute()
+
 const { t } = useI18n()
 const localePath = useLocalePath()
 
@@ -10,7 +12,6 @@ const localePath = useLocalePath()
 
 defineOgImage({
   component: 'Hero',
-  // title: 'Innovate. Design. Inspire.',
   props: {
     title: t('home.hero.title'),
     subtitle: t('home.hero.subtitle'),
@@ -18,10 +19,20 @@ defineOgImage({
 })
 
 useSeoMeta({
-  // title: 'Crafting Digital Excellence',
   title: t('home.seo.title'),
-  // description: 'Step into our digital world, where creativity meets innovation. Discover how we bring brands to life with design, development, and a touch of magic.',
   description: t('home.seo.description'),
+
+  // Open Graph
+  ogTitle: t('home.seo.title'),
+  ogType: 'website',
+  ogImage: '/__og-image__/image' + route.fullPath + '/og.png',
+  ogImageAlt: t('home.seo.title'),
+
+  // Twitter Card
+  twitterTitle: t('home.seo.title'),
+  twitterDescription: t('home.seo.description'),
+  twitterImage: '/__og-image__/image' + route.fullPath + '/og.png',
+  twitterImageAlt: t('home.seo.title'),
 })
 
 // const services = await queryContent('services'

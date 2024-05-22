@@ -8,16 +8,30 @@ const route = useRoute()
 const { t } = useI18n()
 const localePath = useLocalePath()
 
-// defineOgImage({
-//   component: 'Hero',
-//   eyebrow: 'About Us',
-//   title: 'Crafting Digital Dreams at Shaoula',
-//   subtitle: 'At Shaoula, we\'re more than just a web agency. We\'re the architects of digital dreams, dedicated to reshaping online experiences and empowering brands to reach new heights.',
-// })
+defineOgImage({
+  component: 'Hero',
+  props: {
+    eyebrow: t('about.hero.eyebrow'),
+    title: t('about.hero.title'),
+    subtitle: t('about.hero.subtitle'),
+  }
+})
 
 useSeoMeta({
   title: t('about.seo.title'),
   description: t('about.seo.description'),
+
+  // Open Graph
+  ogTitle: t('about.seo.title'),
+  ogType: 'website',
+  ogImage: '/__og-image__/image' + route.fullPath + '/og.png',
+  ogImageAlt: t('about.seo.title'),
+
+  // Twitter Card
+  twitterTitle: t('about.seo.title'),
+  twitterDescription: t('about.seo.description'),
+  twitterImage: '/__og-image__/image' + route.fullPath + '/og.png',
+  twitterImageAlt: t('about.seo.title'),
 })
 
 // const copy = await queryContent('about').findOne()

@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const route = useRoute()
+
 const { t } = useI18n()
 const localePath = useLocalePath()
 
@@ -18,8 +20,20 @@ defineOgImage({
 })
 
 useSeoMeta({
-  title: 'Let\'s Connect',
-  description: 'Get in touch with us. Whether you have a question, a project idea, or just want to say hello, we\'re here to listen and engage.',
+  title: t('contact.hero.title'),
+  description: t('contact.hero.subtitle'),
+
+  // Open Graph
+  ogTitle: t('contact.hero.title'),
+  ogType: 'website',
+  ogImage: '/__og-image__/image' + route.fullPath + '/og.png',
+  ogImageAlt: t('contact.hero.title'),
+
+  // Twitter Card
+  twitterTitle: t('contact.hero.title'),
+  twitterDescription: t('contact.hero.subtitle'),
+  twitterImage: '/__og-image__/image' + route.fullPath + '/og.png',
+  twitterImageAlt: t('contact.hero.title'),
 })
 
 const randomTestimonial = await queryContent(localePath('/testimonials')).only(['name', 'title', 'text', 'image']).limit(1).find()

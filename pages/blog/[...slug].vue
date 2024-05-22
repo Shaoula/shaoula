@@ -7,15 +7,14 @@ const { data } = await useAsyncData(route.path, () => {
   return queryContent().where({ _path: route.path }).findOne()
 })
 
-// defineOgImage({
-//   component: 'Hero',
-//   eyebrow: `${appName} Blog`,
-//   title: data.value?.title ?? 'Blog',
-//   subtitle: data.value?.description ?? 'Read the latest news and updates from Shaoula',
-// })
-
 useSeoMeta({
   titleTemplate: `%s | ${appName} Blog`,
+
+  // Twitter Card
+  twitterTitle: data.value?.title,
+  twitterDescription: data.value?.description,
+  twitterImage: data.value?.image?.url,
+  twitterImageAlt: data.value?.image?.alt,
 })
 
 useContentHead(data.value!)

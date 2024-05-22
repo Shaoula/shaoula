@@ -1,8 +1,29 @@
 <script setup lang="ts">
+import { appUrl } from '~/constants';
+
 const route = useRoute()
 
 const { t } = useI18n()
 const localePath = useLocalePath()
+
+
+
+useSeoMeta({
+  title: t('services.title'),
+  description: t('services.description'),
+  // Open Graph
+  ogTitle: t('services.title'),
+  ogType: 'website',
+
+  ogImage: '/__og-image__/image' + route.fullPath + '/og.png',
+  ogImageAlt: t('services.title'),
+
+  // Twitter Card
+  twitterTitle: t('services.title'),
+  twitterDescription: t('services.description'),
+  twitterImage: '/__og-image__/image' + route.fullPath + '/og.png',
+  twitterImageAlt: t('services.title'),
+})
 
 defineOgImage({
   component: 'Hero',
@@ -10,15 +31,8 @@ defineOgImage({
     eyebrow: t('services.hero.eyebrow'),
     title: t('services.hero.title'),
     subtitle: t('services.hero.subtitle'),
-  }
-})
-
-useSeoMeta({
-  // title: 'Explore Our Offerings',
-  title: t('services.title'),
-  // description: 'Explore our digital toolkit that includes web design, branding, marketing, and more. Let\'s shape your digital success story together.',
-  description: t('services.description'),
-  ogType: 'website'
+  },
+  alt: t('services.hero.title'),
 })
 
 const services = await queryContent(`${route.path}/`)
@@ -52,16 +66,12 @@ const sections = data.value?.body as unknown as { title: string, description: st
     </template>
 
     <div :class="$style.Services">
-      <Card
-        v-for="service in services" :key="service.slug" :class="$style.Services__card" v-bind="service"
-        :clamp="false"
-      />
-      <Card
-        :title="$t('services.cta.title')" :description="$t('services.cta.description')" :action="{
-          label: $t('services.cta.cta'),
-          href: localePath('/contact'),
-        }" :href="localePath('/contact')" class="col-span-full"
-      />
+      <Card v-for="service in services" :key="service.slug" :class="$style.Services__card" v-bind="service"
+        :clamp="false" />
+      <Card :title="$t('services.cta.title')" :description="$t('services.cta.description')" :action="{
+        label: $t('services.cta.cta'),
+        href: localePath('/contact'),
+      }" :href="localePath('/contact')" class="col-span-full" />
     </div>
 
     <section v-for="(section, idx) in sections" :key="idx" :class="$style.Section">

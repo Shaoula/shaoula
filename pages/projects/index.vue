@@ -1,10 +1,24 @@
 <script setup lang="ts">
+const route = useRoute()
+
 const { t } = useI18n()
 // const localePath = useLocalePath()
 
 useSeoMeta({
   title: t('projects.seo.title'),
   description: t('projects.seo.description'),
+
+  // Open Graph
+  ogTitle: t('projects.seo.title'),
+  ogType: 'website',
+  ogImage: '/__og-image__/image' + route.fullPath + '/og.png',
+  ogImageAlt: t('projects.seo.title'),
+
+  // Twitter Card
+  twitterTitle: t('projects.seo.title'),
+  twitterDescription: t('projects.seo.description'),
+  twitterImage: '/__og-image__/image' + route.fullPath + '/og.png',
+  twitterImageAlt: t('projects.seo.title'),
 })
 
 defineOgImage({
@@ -46,8 +60,7 @@ defineOgImage({
           <div :class="$style.Section__content">
             <div :class="$style.Section__image">
               <NuxtImg :src="section.image.url" :alt="section.image.alt" :class="$style.Section__image" format="webp"
-                fit="cover" loading="lazy" placeholder 
-                quality="100" width="natural" height="natural" />
+                fit="cover" loading="lazy" placeholder quality="100" width="natural" height="natural" />
             </div>
             <div :class="$style.Section__description">
               <p>{{ section.description }}</p>
