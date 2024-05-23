@@ -113,7 +113,7 @@ async function onSubscribe(e: Event) {
     <div
       :class="$style.Blog"
     >
-      <ContentList v-slot="{ list: articles }" :path="$route.path" :query="{ sort: [{date: -1}] }">
+      <ContentList v-slot="{ list: articles }" :path="$route.path" :query="{ sort: [{ date: -1 }] }">
         <!-- <section v-for="article in list" :key="article._path">
           <pre>{{ article }}</pre>
           <h2>{{ article.title }}</h2>
