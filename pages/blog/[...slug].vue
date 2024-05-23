@@ -10,6 +10,12 @@ const { data } = await useAsyncData(route.path, () => {
 useSeoMeta({
   titleTemplate: `%s | ${appName} Blog`,
 
+  // Open Graph
+  ogTitle: data.value?.title,
+  ogDescription: data.value?.description,
+  ogImage: data.value?.image?.url,
+  ogImageAlt: data.value?.image?.alt,
+
   // Twitter Card
   twitterTitle: data.value?.title,
   twitterDescription: data.value?.description,
