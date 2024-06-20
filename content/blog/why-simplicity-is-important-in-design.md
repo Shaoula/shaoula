@@ -65,7 +65,7 @@ head:
         - name: "author"
           content: "Shaoula"
         - name: "copyright"
-          content: "© 2023 Shaoula"
+          content: "© 2024 Shaoula"
 
 navigation:
     title: "Why Simplicity is Important in Design: Tips for Striking the Right Balance"
