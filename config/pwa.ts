@@ -1,5 +1,5 @@
-import process from 'node:process'
 import type { ModuleOptions } from '@vite-pwa/nuxt'
+import process from 'node:process'
 import { appDescription, appName } from '../constants/index'
 
 const scope = '/'
@@ -35,6 +35,7 @@ export const pwa: ModuleOptions = {
     ],
   },
   workbox: {
+    maximumFileSizeToCacheInBytes: 30000000,
     globPatterns: ['**/*.{js,css,html,txt,png,ico,svg}'],
     navigateFallbackDenylist: [/^\/api\//],
     navigateFallback: '/',
